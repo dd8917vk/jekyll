@@ -1,0 +1,33 @@
+<!-- - From left to right
+    -logo, search bar, promo codes, cash back, gift cards, coupons, login, sign up -->
+<!-- <nav>
+    <ul class="menu">
+        <li class="logo"><img><a href="#">Crazy Coupons</a></img></li>
+        <li class="logo"></li>
+        <li class="logo"><a href="#">Crazy Coupons</a></li>
+        <li class="logo"><a href="#">Crazy Coupons</a></li>
+        <li class="logo"><a href="#">Crazy Coupons</a></li>
+    </ul>
+</nav> -->
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+
+
+
+  
+<div class="topnav" id="myTopnav">
+    <a href="javascript:void(0);" class="icon" onclick="myTopNav()"><i class="fa fa-bars"></i></a>
+    <a href="#home" class="active" id="down">Logo</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>  
+    <a href="#about">About</a>
+</div> 
+
+<script>
+//Function simply adds responsive to myTopnav id if 
+let myTopNav = () => {
+    let x = document.getElementById("myTopnav");
+    x.className == "topnav" ? x.className += " responsive" : x.className = "topnav"
+    let y = document.getElementById("down");
+    y.className == "active" ? y.className += " responsive" : y.className = "active"
+}
+</script>

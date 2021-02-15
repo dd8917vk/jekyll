@@ -1,0 +1,16 @@
+{
+	"version": 3,
+	"file": "styles.css",
+	"sources": [
+		"styles.scss",
+		"_sass/main.scss",
+		"_sass/nav.scss"
+	],
+	"sourcesContent": [
+		"@import \"main\";\n@import \"nav\";",
+		"//Can define variables with $ sign and use them in your css\n// $font-color: #333;\n.current {\n    color: green;\n}\n  ",
+		"$bgColor: #333;\nbody {\n    background-color: $bgColor;\n}\n\n.topnav {\n    background-image: linear-gradient(to right, #1f5999, #269d8f);\n    overflow: hidden;\n    margin-left: -8px;\n    margin-right: -8px;\n    margin-top: -8px;\n    // #269d8f gradient\n}\n\n/* \nStyle the links inside the navigation bar */\n.topnav a {\n    display: inline-block;\n    color: #f2f2f2;\n    text-align: center;\n    padding: 14px 30px;\n    text-decoration: none;\n    font-size: 20px;\n}\n\n/* Change the color of links on hover */\n.topnav a:hover {\n    background-color: #ddd;\n    color: black;\n}\n\n.topnav a.active {\n    color: white;\n}\n\n\n.topnav .icon {\n    display: none;\n} \n\n\n//for navbar responsiveness\n@media screen and (max-width: 600px) {\n  .topnav a:not(:first-child) {display: none;}\n  .topnav a.icon {\n    float: left;\n    display: block;\n  }\n}\n   .active.responsive {\n       margin-top:50px;\n   }\n\n@media screen and (max-width: 600px) {\n  .topnav.responsive {\n      position: relative;\n   }\n  .topnav.responsive a.icon {\n    float: left;\n    // position: absolute;\n    // right: 0;\n    // top: 0;\n  }\n  .topnav.responsive a {\n    float: none;\n    display: block;\n    text-align: left;\n  }\n}"
+	],
+	"names": [],
+	"mappings": "ACEA,AAAA,QAAQ,CAAC,EACL,KAAK,EAAE,KAAK,GACf;;ACHD,AAAA,IAAI,CAAC,EACD,gBAAgB,EAFV,IAAI,GAGb;;AAED,AAAA,OAAO,CAAC,EACJ,gBAAgB,EAAE,2CAA2C,EAC7D,QAAQ,EAAE,MAAM,EAChB,WAAW,EAAE,IAAI,EACjB,YAAY,EAAE,IAAI,EAClB,UAAU,EAAE,IAAI,GAEnB;;AAED;4CAC4C;AAC5C,AAAA,OAAO,CAAC,CAAC,CAAC,EACN,OAAO,EAAE,YAAY,EACrB,KAAK,EAAE,OAAO,EACd,UAAU,EAAE,MAAM,EAClB,OAAO,EAAE,SAAS,EAClB,eAAe,EAAE,IAAI,EACrB,SAAS,EAAE,IAAI,GAClB;;AAED,wCAAwC;AACxC,AAAA,OAAO,CAAC,CAAC,CAAC,KAAK,CAAC,EACZ,gBAAgB,EAAE,IAAI,EACtB,KAAK,EAAE,KAAK,GACf;;AAED,AAAA,OAAO,CAAC,CAAC,AAAA,OAAO,CAAC,EACb,KAAK,EAAE,KAAK,GACf;;AAGD,AAAA,OAAO,CAAC,KAAK,CAAC,EACV,OAAO,EAAE,IAAI,GAChB;;AAID,MAAM,8BACJ,GAAA,AAAA,OAAO,CAAC,CAAC,CAAA,GAAK,EAAC,WAAW,EAAE,EAAC,OAAO,EAAE,IAAI,GAAG,CAC7C,AAAA,OAAO,CAAC,CAAC,AAAA,KAAK,CAAC,EACb,KAAK,EAAE,IAAI,EACX,OAAO,EAAE,KAAK,GACf,EAJ2C;;AAM3C,AAAA,OAAO,AAAA,WAAW,CAAC,EACf,UAAU,EAAC,IAAI,GAClB;;AAEJ,MAAM,8BACJ,GAAA,AAAA,OAAO,AAAA,WAAW,CAAC,EACf,QAAQ,EAAE,QAAQ,GACpB,CACF,AAAA,OAAO,AAAA,WAAW,CAAC,CAAC,AAAA,KAAK,CAAC,EACxB,KAAK,EAAE,IAAI,GAIZ,CACD,AAAA,OAAO,AAAA,WAAW,CAAC,CAAC,CAAC,EACnB,KAAK,EAAE,IAAI,EACX,OAAO,EAAE,KAAK,EACd,UAAU,EAAE,IAAI,GACjB,EAXC"
+}

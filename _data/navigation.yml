@@ -1,0 +1,6 @@
+- name: Home
+  link: /
+- name: About
+  link: /content/about.html
+- name: About2
+  link: /content/about2.html
