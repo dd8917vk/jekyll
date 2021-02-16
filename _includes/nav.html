@@ -1,33 +1,64 @@
-<!-- - From left to right
-    -logo, search bar, promo codes, cash back, gift cards, coupons, login, sign up -->
-<!-- <nav>
-    <ul class="menu">
-        <li class="logo"><img><a href="#">Crazy Coupons</a></img></li>
-        <li class="logo"></li>
-        <li class="logo"><a href="#">Crazy Coupons</a></li>
-        <li class="logo"><a href="#">Crazy Coupons</a></li>
-        <li class="logo"><a href="#">Crazy Coupons</a></li>
-    </ul>
-</nav> -->
-  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-
+<nav id="hamnav">
+  <label for="hamburger">&#9776;</label>
+  <input type="checkbox" id="hamburger"/>
+  <div id="hamitems">
+    <a href="index.html">Logo</a>
+    <input type="text" placeholder="Coupon search"/>
+    <a href="about.html">Promo Codes</a>
+    <a class="leftedge" href="tech.html">Cash Back</a>
+    <a class="leftedge" href="games.html">Gift Cards</a>
+    <a class="leftedge" href="reviews.html">Store Coupons</a>
+    <a id="login" href="reviews.html">Login</a>
+    <button id="signup" type="submit">Sign Up</button>
+  </div>
+</nav>
 
 
   
-<div class="topnav" id="myTopnav">
+<!-- <div class="topnav" id="myTopnav">
     <a href="javascript:void(0);" class="icon" onclick="myTopNav()"><i class="fa fa-bars"></i></a>
     <a href="#home" class="active" id="down">Logo</a>
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>  
-    <a href="#about">About</a>
-</div> 
+    <input class="inpt" type="text" placeholder="Coupon Search">
+    <a class="gradient" href="#news">Promo<br/>Codes</a>
+    <a class="gradient" href="#contact">Cash<br/>Back</a>  
+    <a class="gradient" href="#about">Gift<br/>Cards</a>
+    <a class="gradient" href="#about">Coupons<br/>Cards</a>
+    <a href="#about">Login</a>
+    <a><button class="btn">Sign Up</button></a>
+</div>  -->
 
-<script>
-//Function simply adds responsive to myTopnav id if 
+<!-- <script> -->
+
+<!-- //Function simply adds responsive to myTopnav id if 
+// window.onload = () => {
+//     windowSize();
+// }
+// const watchWindow = (win) => {
+//     if (win.matches) {
+//         let mGlass = document.createElement("i");
+//         mGlass.classList.add("fas");
+//         mGlass.classList.add("fa-search");
+//         let elem = document.getElementById("myTopnav");
+//         elem.appendChild(mGlass);
+//         document.body.style.backgroundColor = "yellow";
+//     } else {
+//         let icon = document.getElementsByClassName("fas fa-search")
+//         icon[0].remove()
+        
+//         document.body.style.backgroundColor = "pink";
+//     }
+// }
+// const windowSize = () => {
+//     let win = window.matchMedia("(max-width: 800px)");
+//     watchWindow(win)
+//     win.addListener(watchWindow);
+// }
+
+
 let myTopNav = () => {
     let x = document.getElementById("myTopnav");
     x.className == "topnav" ? x.className += " responsive" : x.className = "topnav"
     let y = document.getElementById("down");
     y.className == "active" ? y.className += " responsive" : y.className = "active"
-}
-</script>
+} -->
+<!-- </script> -->
