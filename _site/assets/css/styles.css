@@ -1,7 +1,6 @@
 .current { color: green; }
 
-body { background-color: whitesmoke; }
-
+@use 'base';
 #hamnav { width: 100%; background-image: linear-gradient(to right, #1f5999, #269d8f); /* Optional */ position: sticky; top: 0; }
 
 #hamnav input { height: 30px; margin-top: auto; margin-bottom: auto; border: 1px solid white; border-radius: 3px; }
@@ -23,5 +22,26 @@ body { background-color: whitesmoke; }
 @media screen and (max-width: 768px) { /* Show Hamburger Icon */ #hamnav label { display: inline-block; color: white; font-style: normal; font-size: 1.2em; padding: 10px; } /* Break down menu items into vertical */ #hamitems a { box-sizing: border-box; display: block; width: 100%; color: black; } #hamitems { display: none; } #hamnav input:checked ~ #hamitems { display: block; position: absolute; background-color: white; width: 300px; height: 100vh; } }
 
 html, body { padding: 0; margin: 0; font-family: arial, sans-serif; }
+
+@use 'base';
+.flex-header { display: flex; background-color: #ffffff; height: 200px; }
+
+.flex-chewy { display: flex; width: 20%; justify-content: center; align-items: center; flex-direction: column; }
+
+.heart:hover, .heart { display: flex; margin-top: 200px; position: absolute; background-color: white; width: 2.5em; height: 2.5em; border-radius: 50%; justify-content: center; box-shadow: 0px 3px 2px 0px #888888; }
+
+.heart:hover { box-shadow: 0px 3px 2px 1px #888888; cursor: pointer; }
+
+.heart > i { color: #cccccc; margin: auto auto; }
+
+.flex-promo { width: 70%; margin-left: 20px; justify-content: center; margin: auto auto; }
+
+.flex-prices { display: flex; margin-top: -20px; }
+
+.constrain_prices { display: flex; width: 60%; justify-content: space-between; font-size: 15px; }
+
+.checked { color: orange; }
+
+body { background-color: whitesmoke; }
 
 /*# sourceMappingURL=styles.css.map */

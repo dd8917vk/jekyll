@@ -1,0 +1,72 @@
+@use 'base';
+
+.flex-header {
+    display: flex;
+    background-color: #ffffff;
+    height: 200px;
+}
+
+.flex-chewy {
+    display:flex;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+%heart-shared {
+    display: flex;
+    margin-top:200px;
+    position:absolute;
+    background-color: white;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    justify-content: center;
+    box-shadow: 0px 3px 2px 0px #888888;
+}
+.heart {
+    @extend %heart-shared;
+}
+.heart:hover {
+    @extend %heart-shared;
+    box-shadow: 0px 3px 2px 1px #888888;
+    cursor: pointer;
+}
+
+.heart > i {
+    color: #cccccc;
+    margin: auto auto;
+}
+.flex-promo {
+    width: 70%;
+    margin-left: 20px;
+    justify-content: center;
+    margin: auto auto;
+}
+
+.flex-prices {
+    display:flex;
+    margin-top: -20px;
+}
+.constrain_prices {
+    display:flex;
+    width: 60%;
+    justify-content: space-between;
+    font-size: 15px;
+}
+.checked {
+    color: orange;
+}
+
+
+// @media screen and (max-width: 768px){
+//   /* Show Hamburger Icon */
+//   #hamnav label { 
+//     display: inline-block; 
+//     color: white;
+//     font-style: normal;
+//     font-size: 1.2em;
+//     padding: 10px;
+//   }
+// }

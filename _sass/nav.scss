@@ -1,8 +1,5 @@
 
-$bgColor: whitesmoke;
-body {
-    background-color: $bgColor;
-}
+@use 'base';
 
 #hamnav {
   width: 100%;
