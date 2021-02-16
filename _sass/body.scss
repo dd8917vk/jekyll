@@ -10,6 +10,7 @@
     display: flex;
     width: 25%;
     flex-direction: column;
+    margin-left: 20px;
 }
 .left-panel-top-button {
     margin-top: 4em;
@@ -51,6 +52,26 @@ hr {
 .cash-back i {
     text-align:center;
     color: #266f95;
+}
+.star-body{
+    margin-left: 40px;
+    text-align:center;
+}
+.cash-back p a {
+    color: #266f95
+}
+.left-panel-p {
+    margin-left: 40px;
+}
+.contact-coupon {
+    margin-left: 40px;
+}
+.contact-coupon p {
+    text-align:center;
+}
+.contact-coupon div {
+    display:flex;
+    justify-content: space-between;
 }
 .info-bar-flex{
     display: flex;
