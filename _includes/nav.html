@@ -2,8 +2,8 @@
   <label for="hamburger">&#9776;</label>
   <input type="checkbox" id="hamburger"/>
   <div id="hamitems">
-    <a href="index.html">Logo</a>
-    <input type="text" placeholder="Coupon search"/>
+    <a id="logo" href="index.html">Logo</a>
+    <input id="ipt" class="showInput" type="text" placeholder="Coupon search"/>
     <a href="about.html">Promo Codes</a>
     <a class="leftedge" href="tech.html">Cash Back</a>
     <a class="leftedge" href="games.html">Gift Cards</a>
@@ -12,7 +12,52 @@
     <button id="signup" type="submit">Sign Up</button>
   </div>
 </nav>
+<script>
+window.onload = () => {
+    windowSize();
+}
+const watchWindow = (win) => {
+    //if window less than or equal to 768px
+    if (win.matches) {
+        document.getElementById("ipt").style.display = "none";
+        // document.getElementById("logo").style.display = "none";
+        let logo = document.getElementById("hamnav");
+        let div = document.createElement("DIV");
+        div.className = "logoCenter";
+        let txt = document.createTextNode("Logo");
+        div.appendChild(txt)
+        logo.append(div);
 
+        // let mGlass = document.createElement("i");
+        // mGlass.classList.add("fas");
+        // mGlass.classList.add("fa-search");
+        // let elem = document.getElementById("myTopnav");
+        // elem.appendChild(mGlass);
+        // document.body.style.backgroundColor = "yellow";
+    } else {
+        let inpt = document.getElementById("ipt");
+        inpt.style.cssText = "";
+        let logo = document.getElementById("logo");
+        logo.style.cssText = "";
+        let responsiveLogo = document.getElementsByClassName("logoCenter");
+        responsiveLogo[0].remove();
+        // inpt.style = ""
+        
+
+        // let icon = document.getElementsByClassName("fas fa-search")
+        // icon[0].remove()
+        
+        // document.body.style.backgroundColor = "pink";
+    }
+}
+const windowSize = () => {
+    let win = window.matchMedia("(max-width: 768px)");
+    watchWindow(win)
+    win.addListener(watchWindow);
+}
+
+
+</script>
 
   
 <!-- <div class="topnav" id="myTopnav">

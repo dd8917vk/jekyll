@@ -39,6 +39,15 @@ body {
   border-image: 
   linear-gradient(transparent, gray, transparent) 1 100%;
 }
+.logoCenter {
+    text-align:center;
+    margin: auto auto;
+    margin-left: 40%;
+    width: 10%;
+    display: inline-block;
+    
+    
+}
 // #hamitems a:hover {
 //   background: #401408;
 // }
@@ -81,7 +90,6 @@ body {
   }
 
 }
-
 html, body {
   padding: 0;
   margin: 0;

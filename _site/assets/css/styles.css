@@ -16,6 +16,8 @@ body { background-color: whitesmoke; }
 
 .leftedge { border-width: 2px; border-left-style: solid; border-image: linear-gradient(transparent, gray, transparent) 1 100%; }
 
+.logoCenter { text-align: center; margin: auto auto; margin-left: 40%; width: 10%; display: inline-block; }
+
 #signup { height: 30px; width: 70px; margin-top: auto; margin-bottom: auto; border-radius: 30px; margin-right: 20px; border: 1px solid white; background-color: whitesmoke; }
 
 @media screen and (max-width: 768px) { /* Show Hamburger Icon */ #hamnav label { display: inline-block; color: white; font-style: normal; font-size: 1.2em; padding: 10px; } /* Break down menu items into vertical */ #hamitems a { box-sizing: border-box; display: block; width: 100%; color: black; } #hamitems { display: none; } #hamnav input:checked ~ #hamitems { display: block; position: absolute; background-color: white; width: 300px; height: 100vh; } }
