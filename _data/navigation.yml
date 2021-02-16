@@ -1,6 +1,14 @@
-- name: Home
-  link: /
-- name: About
-  link: /content/about.html
-- name: About2
-  link: /content/about2.html
+# - name: Home
+#   link: /
+# - name: About
+#   link: /content/about.html
+# - name: About2
+#   link: /content/about2.html
+test: 'test'
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+      
