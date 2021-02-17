@@ -19,12 +19,12 @@
   <label for="hamburger">&#9776;</label>
   <input type="checkbox" id="hamburger"/>
   <div id="hamitems">
-    <a id="logo" href="index.html">Logo</a>
+    <a id="logo" href="index.html">COUPON<i class="fas fa-home"></i>CABIN</a>
     <input id="ipt" class="showInput" type="text" placeholder="Coupon search"/>
-    <a href="about.html">Promo Codes</a>
-    <a class="leftedge" href="tech.html">Cash Back</a>
-    <a class="leftedge" href="games.html">Gift Cards</a>
-    <a class="leftedge" href="reviews.html">Store Coupons</a>
+    <a href="about.html">Promo<br>Codes</a>
+    <a class="leftedge" href="tech.html">Cash<br>Back</a>
+    <a class="leftedge" href="games.html">Gift<br>Cards</a>
+    <a class="leftedge" href="reviews.html">Store<br>Coupons</a>
     <a id="login" href="reviews.html">Login</a>
     <button id="signup" type="submit">Sign Up</button>
   </div>
@@ -41,8 +41,9 @@ const watchWindow = (win) => {
         let logo = document.getElementById("hamnav");
         let div = document.createElement("DIV");
         div.className = "logoCenter";
-        let txt = document.createTextNode("Logo");
-        div.appendChild(txt)
+        // let txt = document.createTextNode("Logo");
+        div.innerHTML = '<a id="logo" href="index.html">COUPON<i class="fas fa-home"></i>CABIN</a>';
+        // div.appendChild(txt)
         logo.append(div);
 
         // let mGlass = document.createElement("i");
@@ -52,12 +53,17 @@ const watchWindow = (win) => {
         // elem.appendChild(mGlass);
         // document.body.style.backgroundColor = "yellow";
     } else {
-        let inpt = document.getElementById("ipt");
-        inpt.style.cssText = "";
-        let logo = document.getElementById("logo");
-        logo.style.cssText = "";
-        let responsiveLogo = document.getElementsByClassName("logoCenter");
-        responsiveLogo[0].remove();
+        try{
+            let inpt = document.getElementById("ipt");
+            inpt.style.cssText = "";
+            let logo = document.getElementById("logo");
+            logo.style.cssText = "";
+            let responsiveLogo = document.getElementsByClassName("logoCenter");
+            responsiveLogo[0].remove();
+        } catch {
+            console.log('Removing logo failed')
+        }
+        
         // inpt.style = ""
         
 
@@ -302,7 +308,7 @@ let myTopNav = () => {
     <div class="card-flex-bottom">
         <p>$29 avg saved</p>
         <p>101 used today</p>
-        <p>Ends 2021-02-17 12:02:15 -0600</p>
+        <p>Ends 2021-02-17 14:13:06 -0600</p>
     </div>
 </div>
             <div class="card-flex">
@@ -338,7 +344,7 @@ let myTopNav = () => {
     <div class="card-flex-bottom">
         <p>$29 avg saved</p>
         <p>101 used today</p>
-        <p>Ends 2021-02-17 12:02:15 -0600</p>
+        <p>Ends 2021-02-17 14:13:06 -0600</p>
     </div>
 </div>
         </div>

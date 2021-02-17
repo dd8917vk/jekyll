@@ -35,6 +35,11 @@
   text-decoration: none;
   justify-content:center;
 }
+#hamitems #logo {
+  margin-right: 4em;
+  white-space: nowrap;
+  font-size: 1.5em;
+}
 .leftedge {
   border-width: 2px;
   border-left-style:solid;
@@ -58,15 +63,14 @@
 }
 #signup {
     height: 30px;
-    width: 70px;
-    margin-top: auto;
-    margin-bottom: auto;
+    min-width: 5em;
+    margin-top: .5em;
     border-radius: 30px;
     border: 1px solid white;
     background-color: whitesmoke;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 900px){
   /* Show Hamburger Icon */
   #hamnav label { 
     display: inline-block; 
@@ -91,6 +95,8 @@
       background-color:white;
       width: 300px;
       height: 100vh;
+      margin-left: 0;
+      margin-top: 22px;
   }
 
 }
@@ -100,6 +106,20 @@ html, body {
   font-family: arial, sans-serif;
 }
 
+@media screen and (max-width: 1340px){
+  #hamitems #logo {
+    margin-right: 6em;
+    // margin-right: 4em;
+    white-space: nowrap;
+    font-size: 1.5em
+  }
+  .logoCenter a{
+    margin: auto auto;
+    white-space: nowrap;
+    color: whitesmoke;
+  }
+
+}
 // .topnav {
 //     background-image: linear-gradient(to right, #1f5999, #269d8f);
 //     overflow: hidden;

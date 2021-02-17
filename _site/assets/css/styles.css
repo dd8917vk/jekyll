@@ -13,17 +13,21 @@
 
 #hamitems a { width: 10%; /* 100% / 5 tabs = 20% */ padding: 10px; color: white; text-decoration: none; justify-content: center; }
 
+#hamitems #logo { margin-right: 4em; white-space: nowrap; font-size: 1.5em; }
+
 .leftedge { border-width: 2px; border-left-style: solid; border-image: linear-gradient(transparent, gray, transparent) 1 100%; }
 
 .logoCenter { text-align: center; margin: auto auto; margin-left: 40%; width: 10%; display: inline-block; }
 
 #login { margin-left: 2em; }
 
-#signup { height: 30px; width: 70px; margin-top: auto; margin-bottom: auto; border-radius: 30px; border: 1px solid white; background-color: whitesmoke; }
+#signup { height: 30px; min-width: 5em; margin-top: .5em; border-radius: 30px; border: 1px solid white; background-color: whitesmoke; }
 
-@media screen and (max-width: 800px) { /* Show Hamburger Icon */ #hamnav label { display: inline-block; color: white; font-style: normal; font-size: 1.2em; padding: 10px; } /* Break down menu items into vertical */ #hamitems a { box-sizing: border-box; display: block; width: 100%; color: black; } #hamitems { display: none; } #hamnav input:checked ~ #hamitems { display: block; position: absolute; background-color: white; width: 300px; height: 100vh; } }
+@media screen and (max-width: 900px) { /* Show Hamburger Icon */ #hamnav label { display: inline-block; color: white; font-style: normal; font-size: 1.2em; padding: 10px; } /* Break down menu items into vertical */ #hamitems a { box-sizing: border-box; display: block; width: 100%; color: black; } #hamitems { display: none; } #hamnav input:checked ~ #hamitems { display: block; position: absolute; background-color: white; width: 300px; height: 100vh; margin-left: 0; margin-top: 22px; } }
 
 html, body { padding: 0; margin: 0; font-family: arial, sans-serif; }
+
+@media screen and (max-width: 1340px) { #hamitems #logo { margin-right: 6em; white-space: nowrap; font-size: 1.5em; } .logoCenter a { margin: auto auto; white-space: nowrap; color: whitesmoke; } }
 
 @use 'base';
 .flex-header { display: flex; background-color: #ffffff; height: 200px; }
@@ -44,12 +48,14 @@ html, body { padding: 0; margin: 0; font-family: arial, sans-serif; }
 
 .checked { color: orange; }
 
-@media screen and (max-width: 800px) { .constrain_prices { font-size: 12px; } .heart { right: 20px; position: absolute; margin-bottom: 200px; } }
+@media screen and (max-width: 900px) { .constrain_prices { font-size: 12px; } .heart { right: 20px; position: absolute; margin-bottom: 200px; } }
 
 body { background-color: whitesmoke; }
 
 @use 'base';
 .body-flex { display: flex; color: #4e4e4e; }
+
+.logo-image { width: 20px; height: 10px; }
 
 .left-panel-flex { display: flex; width: 25%; flex-direction: column; margin-left: 20px; }
 
@@ -95,7 +101,7 @@ hr { border-top: 0.5px solid #cecece; width: 90%; }
 
 .coupon-flex { display: flex; flex-direction: column; }
 
-@media screen and (max-width: 800px) { .left-panel-flex { display: none; } .right-panel-flex { width: 100%; } }
+@media screen and (max-width: 900px) { .left-panel-flex { display: none; } .right-panel-flex { width: 100%; } }
 
 @use 'base';
 .card-flex { display: flex; background-color: #ffffff; color: #4e4e4e; flex-direction: column; width: 90%; box-shadow: 2px 2px 10px 2px #cacaca; border-radius: 10px; margin-top: 1em; }
