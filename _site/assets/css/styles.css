@@ -1,23 +1,25 @@
 .current { color: green; }
 
 @use 'base';
-#hamnav { width: 100%; background-image: linear-gradient(to right, #1f5999, #269d8f); /* Optional */ position: sticky; top: 0; }
+#hamnav { width: 100%; background-image: linear-gradient(to right, #1f5999, #269d8f); /* Optional */ position: sticky; top: 0; height: 4em; padding-top: 20px; }
 
-#hamnav input { height: 30px; margin-top: auto; margin-bottom: auto; border: 1px solid white; border-radius: 3px; }
+#hamnav input { height: 3em; margin-top: auto; margin-bottom: auto; border: 1px solid white; border-radius: 3px; }
 
 /* Hide Hamburger */
 #hamnav label, #hamburger { display: none; }
 
 /* Horizontal Menu Items */
-#hamitems { display: flex; }
+#hamitems { display: flex; margin-left: 10em; margin-right: 10em; }
 
-#hamitems a { width: 10%; /* 100% / 5 tabs = 20% */ padding: 10px; color: white; text-decoration: none; justify-content: center; margin: auto auto; }
+#hamitems a { width: 10%; /* 100% / 5 tabs = 20% */ padding: 10px; color: white; text-decoration: none; justify-content: center; }
 
 .leftedge { border-width: 2px; border-left-style: solid; border-image: linear-gradient(transparent, gray, transparent) 1 100%; }
 
 .logoCenter { text-align: center; margin: auto auto; margin-left: 40%; width: 10%; display: inline-block; }
 
-#signup { height: 30px; width: 70px; margin-top: auto; margin-bottom: auto; border-radius: 30px; margin-right: 20px; border: 1px solid white; background-color: whitesmoke; }
+#login { margin-left: 2em; }
+
+#signup { height: 30px; width: 70px; margin-top: auto; margin-bottom: auto; border-radius: 30px; border: 1px solid white; background-color: whitesmoke; }
 
 @media screen and (max-width: 768px) { /* Show Hamburger Icon */ #hamnav label { display: inline-block; color: white; font-style: normal; font-size: 1.2em; padding: 10px; } /* Break down menu items into vertical */ #hamitems a { box-sizing: border-box; display: block; width: 100%; color: black; } #hamitems { display: none; } #hamnav input:checked ~ #hamitems { display: block; position: absolute; background-color: white; width: 300px; height: 100vh; } }
 
@@ -102,6 +104,8 @@ hr { border-top: 0.5px solid #cecece; width: 90%; }
 
 .card-flex-mid-left { display: flex; margin-left: 2em; }
 
+.card-flex-mid-right { display: flex; flex-direction: column; align-items: center; }
+
 .coupon-text { margin-left: 1em; margin-top: 1em; }
 
 .coupon-square { height: 80px; width: 80px; background-image: linear-gradient(to right, #1f5999, #269d8f); border-top-left-radius: 5px; border-top-right-radius: 5px; color: whitesmoke; }
@@ -112,6 +116,12 @@ hr { border-top: 0.5px solid #cecece; width: 90%; }
 
 .coupon-triangle { width: 0; height: 0; border-left: 40px solid transparent; border-right: 40px solid transparent; border-top: 20px solid #1f5999; }
 
-.card-flex-mid-right { margin-right: 1em; margin-top: 2em; }
+.card-flex-mid-right div span { margin-bottom: 10px; font-size: 14px; }
+
+.card-flex-mid-right a { font-size: 10px; color: #4e4e4e; }
+
+.card-flex-mid-button { border-radius: 30px; background-color: #3297ad; margin: auto auto; border: 1px solid #3297ad; width: 10em; height: 3em; color: whitesmoke; font-size: 18px; }
+
+.card-flex-mid-right { margin-right: 2em; margin-top: 2em; }
 
 /*# sourceMappingURL=styles.css.map */

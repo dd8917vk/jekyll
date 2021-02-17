@@ -7,9 +7,11 @@
   /* Optional */
   position: sticky;
   top: 0;
+  height: 4em;
+  padding-top: 20px;
 }
 #hamnav input {
-    height: 30px;
+    height: 3em;
     margin-top: auto;
     margin-bottom: auto;
     border: 1px solid white;
@@ -19,7 +21,11 @@
 #hamnav label, #hamburger { display: none; }
 
 /* Horizontal Menu Items */
-#hamitems { display: flex; }
+#hamitems { 
+  display: flex; 
+  margin-left: 10em;
+  margin-right: 10em;
+}
 
 
 #hamitems a {
@@ -28,7 +34,6 @@
   color: white;
   text-decoration: none;
   justify-content:center;
-  margin: auto auto;
 }
 .leftedge {
   border-width: 2px;
@@ -48,13 +53,15 @@
 // #hamitems a:hover {
 //   background: #401408;
 // }
+#login {
+  margin-left: 2em;
+}
 #signup {
     height: 30px;
     width: 70px;
     margin-top: auto;
     margin-bottom: auto;
     border-radius: 30px;
-    margin-right: 20px;
     border: 1px solid white;
     background-color: whitesmoke;
 }
