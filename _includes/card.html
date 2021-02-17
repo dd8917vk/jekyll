@@ -1,36 +1,51 @@
-<div class="card-flex">
-    <div class="card-flex-top">
-        <p>SALE</p>
-	    <p><i class="fas fa-heart"></i></p>
-    </div>
-    <div class="card-flex-mid">
-        <div class="card-flex-mid-left">
-            <div class="coupon-label">
-                <div class="coupon-square">
-                    <p>50%</p>
-                    <p>OFF</p>
+
+<div class="card-flex-background">
+    <div class="card-flex">
+        <div class="card-flex-top">
+            <p>SALE</p>
+	        <p><i class="fas fa-heart"></i></p>
+        </div>
+        <div class="card-flex-mid">
+            <div class="card-flex-mid-left">
+                <div class="coupon-label">
+                    <div class="coupon-square">
+                        <p>50%</p>
+                        <p>OFF</p>
+                    </div>
+                    <div class="coupon-triangle">
+                    </div>
                 </div>
-                <div class="coupon-triangle">
+                <div class="coupon-text">
+                    <h2>50% off</h2>
+                    <p>Purchases of 50% off or more</p>
                 </div>
             </div>
-            <div class="coupon-text">
-                <h2>50% off</h2>
-                <p>Purchases of 50% off or more</p>
+            <div class="card-flex-mid-right">
+                <div>
+                    <span class="fa fa-star checked"></span>
+                    <span>TOP OFFER</span>
+                </div>
+                <button class="card-flex-mid-button">Get Coupon</button>
+                <a href="#">This coupon works heres the proof</a>
             </div>
         </div>
-        <div class="card-flex-mid-right">
-            <div>
-                <span class="fa fa-star checked"></span>
-                <span>TOP OFFER</span>
-            </div>
-            <button class="card-flex-mid-button">Get Coupon</button>
-            <a href="#">This coupon works heres the proof</a>
+        <hr id="card-flex-bottom-seperator">
+        <div class="card-flex-bottom">
+            <p>$29 avg saved</p>
+            <p>101 used today</p>
+            <p>Ends {{ site.time }}</p>
         </div>
-    </div>
-    <hr id="card-flex-bottom-seperator">
-    <div class="card-flex-bottom">
-        <p>$29 avg saved</p>
-        <p>101 used today</p>
-        <p>Ends {{ site.time }}</p>
     </div>
 </div>
+<script>
+    window.onload = () => {
+        setTopCard();
+    }
+    const setTopCard = () => {
+        let cardCollection = document.getElementsByClassName("card-flex-background");
+        cardCollection[0].className = "card-flex-background-apply";
+        let cardBoxShadow = document.getElementsByClassName("card-flex");
+        cardBoxShadow[0].style.boxShadow = "none";
+        console.log(cardBoxShadow[0]);
+    }
+</script>

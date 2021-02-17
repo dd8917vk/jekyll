@@ -1,12 +1,21 @@
 @use 'base';
-
+// Card Background will be applied by JS
+// if it is index 0, first card in the stack.
+.card-flex-background-apply {
+    background-image: linear-gradient(to right, #ff0006,#ff0079,#ff5d1e);
+    border-radius: 15px;
+    padding-left: 8px;
+    width: 99%;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
 // Main Card
 .card-flex {
     display:flex;
     background-color: #ffffff;
     color: $leftPanelColor;
     flex-direction: column;
-    width: 90%;
+    width: 99%;
     box-shadow: 2px 2px 10px 2px rgb(202, 202, 202);
     border-radius: 10px;
     margin-top: 1em;
