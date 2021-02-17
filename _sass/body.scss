@@ -107,3 +107,15 @@ hr {
     display:flex;
     flex-direction: column;
 }
+
+//Media queries 800px or less
+@media screen and (max-width: 800px){
+    //Hide left panel
+    .left-panel-flex{
+        display: none;
+    }
+    //Make right panel and info bar width 100% now
+    .right-panel-flex {
+        width: 100%;
+    }
+}

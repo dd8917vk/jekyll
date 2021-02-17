@@ -21,7 +21,7 @@
 
 #signup { height: 30px; width: 70px; margin-top: auto; margin-bottom: auto; border-radius: 30px; border: 1px solid white; background-color: whitesmoke; }
 
-@media screen and (max-width: 768px) { /* Show Hamburger Icon */ #hamnav label { display: inline-block; color: white; font-style: normal; font-size: 1.2em; padding: 10px; } /* Break down menu items into vertical */ #hamitems a { box-sizing: border-box; display: block; width: 100%; color: black; } #hamitems { display: none; } #hamnav input:checked ~ #hamitems { display: block; position: absolute; background-color: white; width: 300px; height: 100vh; } }
+@media screen and (max-width: 800px) { /* Show Hamburger Icon */ #hamnav label { display: inline-block; color: white; font-style: normal; font-size: 1.2em; padding: 10px; } /* Break down menu items into vertical */ #hamitems a { box-sizing: border-box; display: block; width: 100%; color: black; } #hamitems { display: none; } #hamnav input:checked ~ #hamitems { display: block; position: absolute; background-color: white; width: 300px; height: 100vh; } }
 
 html, body { padding: 0; margin: 0; font-family: arial, sans-serif; }
 
@@ -44,7 +44,7 @@ html, body { padding: 0; margin: 0; font-family: arial, sans-serif; }
 
 .checked { color: orange; }
 
-@media screen and (max-width: 768px) { .constrain_prices { font-size: 12px; } .heart { right: 20px; position: absolute; margin-bottom: 200px; } }
+@media screen and (max-width: 800px) { .constrain_prices { font-size: 12px; } .heart { right: 20px; position: absolute; margin-bottom: 200px; } }
 
 body { background-color: whitesmoke; }
 
@@ -94,6 +94,8 @@ hr { border-top: 0.5px solid #cecece; width: 90%; }
 .info-bar-select { width: 10em; margin-right: 1em; height: 2em; border-radius: 30px; color: #4e4e4e; margin-top: 1em; }
 
 .coupon-flex { display: flex; flex-direction: column; }
+
+@media screen and (max-width: 800px) { .left-panel-flex { display: none; } .right-panel-flex { width: 100%; } }
 
 @use 'base';
 .card-flex { display: flex; background-color: #ffffff; color: #4e4e4e; flex-direction: column; width: 90%; box-shadow: 2px 2px 10px 2px #cacaca; border-radius: 10px; margin-top: 1em; }
