@@ -16,6 +16,20 @@
     font-size: 11px;
     color: $hrColor;
 }
+.card-flex-mid {
+    display:flex;
+    margin-top: -15px;
+    justify-content: space-between;
+}
+.card-flex-mid-left {
+    display: flex; 
+    margin-left: 2em;
+}
+.coupon-text {
+    margin-left: 1em;
+    margin-top: 1em;
+    
+}
 .coupon-square {
     height: 80px;
     width: 80px;
@@ -40,8 +54,8 @@
 	border-right: 40px solid transparent;
 	border-top: 20px solid #1f5999;
     // border-image: linear-gradient(to top, #1f5999, #269d8f);
-    
 }
-.card-flex-mid {
-    display:flex;
+.card-flex-mid-right {
+    margin-right: 1em;
+    margin-top: 2em;
 }

@@ -98,6 +98,12 @@ hr { border-top: 0.5px solid #cecece; width: 90%; }
 
 .card-flex-top { display: flex; justify-content: space-between; padding-left: 10px; padding-right: 10px; font-size: 11px; color: #cecece; }
 
+.card-flex-mid { display: flex; margin-top: -15px; justify-content: space-between; }
+
+.card-flex-mid-left { display: flex; margin-left: 2em; }
+
+.coupon-text { margin-left: 1em; margin-top: 1em; }
+
 .coupon-square { height: 80px; width: 80px; background-image: linear-gradient(to right, #1f5999, #269d8f); border-top-left-radius: 5px; border-top-right-radius: 5px; color: whitesmoke; }
 
 .coupon-square p:nth-child(1) { font-size: 2em; text-align: center; padding-top: 10px; }
@@ -106,6 +112,6 @@ hr { border-top: 0.5px solid #cecece; width: 90%; }
 
 .coupon-triangle { width: 0; height: 0; border-left: 40px solid transparent; border-right: 40px solid transparent; border-top: 20px solid #1f5999; }
 
-.card-flex-mid { display: flex; }
+.card-flex-mid-right { margin-right: 1em; margin-top: 2em; }
 
 /*# sourceMappingURL=styles.css.map */
