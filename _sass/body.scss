@@ -200,14 +200,14 @@ hr {
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-bottom: 4em;
+    padding-bottom: 2em;
 }
 .bottom-panel-links-container {
     background-color: $bgColor2;
     display: flex;
     justify-content: center;
     height: 18em;
-    padding-bottom: 4em;
+    padding-bottom: 3em;
 }
 .bottom-panel-links {
     padding-top: 4em;
@@ -227,6 +227,23 @@ hr {
 .bottom-panel-links div a{
     color: #266f95;
 }
+.twitter-bar-bg {
+    background-color: $bgColor;
+    display:flex;
+    justify-content: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.twitter-bar {
+    display:flex;
+    width: 15%;
+    justify-content:space-between;
+}
+.twitter-bar p > i{
+    color: #666666;
+
+}
+
 //Media queries 800px or less
 @media screen and (max-width: 900px){
     //Hide left panel
