@@ -12,7 +12,7 @@
 // Main Card
 .card-flex {
     display:flex;
-    background-color: #ffffff;
+    background-color: $bgColor2;
     color: $leftPanelColor;
     flex-direction: column;
     width: 99%;
@@ -98,7 +98,7 @@
     border: 1px solid #3297ad;
     width: 10em;
     height: 3em;
-    color: whitesmoke;
+    color: $bgColor;
     font-size: 18px;
 }
 .card-flex-mid-right {

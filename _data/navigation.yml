@@ -11,4 +11,26 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       layout: "default"
-      
+coupon:
+    - amount: 50%
+      saved: $29
+      used: 101
+    - amount: 20%
+      saved: $29
+      used: 141
+    - amount: 40%
+      saved: $19
+      used: 100
+    - amount: 60%
+      saved: $49
+      used: 11
+    - amount: 30%
+      saved: $59
+      used: 131
+    - amount: 60%
+      saved: $49
+      used: 11
+    - amount: 30%
+      saved: $59
+      used: 131
+---
