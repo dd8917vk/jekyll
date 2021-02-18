@@ -15,6 +15,7 @@
     width: 25%;
     flex-direction: column;
     margin-left: 20px;
+    position: sticky;
 }
 .left-panel-top-button {
     margin-top: 2em;
@@ -40,7 +41,7 @@
     font-size: 18px;
 }
 .radio-selections {
-    margin: auto auto;
+    margin: 0 auto;
     margin-bottom: 1em;
 }
 hr {

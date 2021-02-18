@@ -1,7 +1,7 @@
 .current { color: green; }
 
 @use 'base';
-#hamnav { width: 100%; background-image: linear-gradient(to right, #1f5999, #269d8f); /* Optional */ position: sticky; top: 0; height: 4em; padding-top: 20px; }
+#hamnav { width: 100%; background-image: linear-gradient(to right, #1f5999, #269d8f); /* Optional */ position: sticky; top: 0; height: 4em; padding-top: 20px; z-index: 1; }
 
 #hamnav input { height: 3em; margin-top: auto; margin-bottom: auto; border: 1px solid white; border-radius: 3px; }
 
@@ -57,7 +57,7 @@ body { background-color: whitesmoke; }
 
 .logo-image { width: 20px; height: 10px; }
 
-.left-panel-flex { display: flex; width: 25%; flex-direction: column; margin-left: 20px; }
+.left-panel-flex { display: flex; width: 25%; flex-direction: column; margin-left: 20px; position: sticky; }
 
 .left-panel-top-button { margin-top: 2em; display: flex; margin-bottom: 20px; flex-direction: column; justify-content: center; }
 
@@ -65,7 +65,7 @@ body { background-color: whitesmoke; }
 
 .left-panel-button-actual { border-radius: 30px; background-color: #ff003b; margin: auto auto; border: 1px solid #ff003b; width: 75%; height: 3em; color: whitesmoke; font-size: 18px; }
 
-.radio-selections { margin: auto auto; margin-bottom: 1em; }
+.radio-selections { margin: 0 auto; margin-bottom: 1em; }
 
 hr { border-top: 0.5px solid #cecece; width: 90%; }
 
@@ -136,7 +136,7 @@ hr { border-top: 0.5px solid #cecece; width: 90%; }
 
 .card-flex-mid-right { margin-right: 2em; margin-top: 2em; }
 
-#card-flex-bottom-seperator { width: 100%; }
+#card-flex-bottom-seperator { width: 99.5%; }
 
 .card-flex-bottom { margin-top: -1em; display: flex; justify-content: space-between; margin-left: 1em; margin-right: 15em; }
 

@@ -1,4 +1,4 @@
-
+{% for item in page.coupon %}
 <div class="card-flex-background">
     <div class="card-flex">
         <div class="card-flex-top">
@@ -9,14 +9,14 @@
             <div class="card-flex-mid-left">
                 <div class="coupon-label">
                     <div class="coupon-square">
-                        <p>50%</p>
+                        <p>{{ item.amount }}</p>
                         <p>OFF</p>
                     </div>
                     <div class="coupon-triangle">
                     </div>
                 </div>
                 <div class="coupon-text">
-                    <h2>50% off</h2>
+                    <h2>{{ item.amount }} off</h2>
                     <p>Purchases of 50% off or more</p>
                 </div>
             </div>
@@ -31,12 +31,13 @@
         </div>
         <hr id="card-flex-bottom-seperator">
         <div class="card-flex-bottom">
-            <p>$29 avg saved</p>
-            <p>101 used today</p>
+            <p>{{ item.saved }} avg saved</p>
+            <p>{{ item.used }} used today</p>
             <p>Ends {{ site.time }}</p>
         </div>
     </div>
 </div>
+{% endfor %}
 <script>
     window.onload = () => {
         setTopCard();
