@@ -261,6 +261,23 @@ hr {
     font-size: .5em;
     color: whitesmoke;
 }
+
+.scroll-button {
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+    z-index: 99;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    position: fixed;
+    background-color: lightgray;
+    display: none;
+}
+.fas.fa-arrow-up.fa-3x {
+    color: whitesmoke;
+}
 //Media queries 800px or less
 @media screen and (max-width: 900px){
     //Hide left panel

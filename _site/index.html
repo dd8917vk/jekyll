@@ -310,7 +310,7 @@ let myTopNav = () => {
         <div class="card-flex-bottom">
             <p>$29 avg saved</p>
             <p>101 used today</p>
-            <p>Ends 2021-02-22 10:17:50 -0600</p>
+            <p>Ends 2021-02-22 11:07:47 -0600</p>
         </div>
     </div>
 </div>
@@ -349,7 +349,7 @@ let myTopNav = () => {
         <div class="card-flex-bottom">
             <p>$29 avg saved</p>
             <p>141 used today</p>
-            <p>Ends 2021-02-22 10:17:50 -0600</p>
+            <p>Ends 2021-02-22 11:07:47 -0600</p>
         </div>
     </div>
 </div>
@@ -388,7 +388,7 @@ let myTopNav = () => {
         <div class="card-flex-bottom">
             <p>$19 avg saved</p>
             <p>100 used today</p>
-            <p>Ends 2021-02-22 10:17:50 -0600</p>
+            <p>Ends 2021-02-22 11:07:47 -0600</p>
         </div>
     </div>
 </div>
@@ -427,7 +427,7 @@ let myTopNav = () => {
         <div class="card-flex-bottom">
             <p>$49 avg saved</p>
             <p>11 used today</p>
-            <p>Ends 2021-02-22 10:17:50 -0600</p>
+            <p>Ends 2021-02-22 11:07:47 -0600</p>
         </div>
     </div>
 </div>
@@ -466,7 +466,7 @@ let myTopNav = () => {
         <div class="card-flex-bottom">
             <p>$59 avg saved</p>
             <p>131 used today</p>
-            <p>Ends 2021-02-22 10:17:50 -0600</p>
+            <p>Ends 2021-02-22 11:07:47 -0600</p>
         </div>
     </div>
 </div>
@@ -505,7 +505,7 @@ let myTopNav = () => {
         <div class="card-flex-bottom">
             <p>$49 avg saved</p>
             <p>11 used today</p>
-            <p>Ends 2021-02-22 10:17:50 -0600</p>
+            <p>Ends 2021-02-22 11:07:47 -0600</p>
         </div>
     </div>
 </div>
@@ -544,7 +544,7 @@ let myTopNav = () => {
         <div class="card-flex-bottom">
             <p>$59 avg saved</p>
             <p>131 used today</p>
-            <p>Ends 2021-02-22 10:17:50 -0600</p>
+            <p>Ends 2021-02-22 11:07:47 -0600</p>
         </div>
     </div>
 </div>
@@ -827,6 +827,27 @@ let myTopNav = () => {
         <a class="bottom-footer-logo" href="index.html">COUPON<i class="fas fa-home"></i>CABIN</a>
         <p>©2003-2021 CouponCabin LLC. Use of this site is subject to the Terms & Conditions.</p>
 </div>
+<button onclick="goToTop()" id="scrollBtn" class="scroll-button"><i class="fas fa-arrow-up fa-3x"></i></button>
+
+<script>
+    let myBtn = document.getElementById("scrollBtn");
+    window.onscroll = () => {scrollFunction()}
+
+
+    const scrollFunction = () => {
+        console.log(document.body.scrollTop);
+        console.log(document.documentElement.scrollTop);
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            myBtn.style.display = "block";
+        } else {
+            myBtn.style.display = "none";
+        }
+    }
+    const goToTop = () => {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
         <!-- <nav>
     
       <a href="" ></a>

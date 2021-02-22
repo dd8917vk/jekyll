@@ -236,3 +236,24 @@
         <a class="bottom-footer-logo" href="index.html">COUPON<i class="fas fa-home"></i>CABIN</a>
         <p>©2003-2021 CouponCabin LLC. Use of this site is subject to the Terms & Conditions.</p>
 </div>
+<button onclick="goToTop()" id="scrollBtn" class="scroll-button"><i class="fas fa-arrow-up fa-3x"></i></button>
+
+<script>
+    let myBtn = document.getElementById("scrollBtn");
+    window.onscroll = () => {scrollFunction()}
+
+
+    const scrollFunction = () => {
+        console.log(document.body.scrollTop);
+        console.log(document.documentElement.scrollTop);
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            myBtn.style.display = "block";
+        } else {
+            myBtn.style.display = "none";
+        }
+    }
+    const goToTop = () => {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>

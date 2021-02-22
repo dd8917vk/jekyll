@@ -153,6 +153,10 @@ hr { border-top: 0.5px solid #cecece; width: 90%; }
 
 .bottom-footer p { font-size: .5em; color: whitesmoke; }
 
+.scroll-button { width: 5em; height: 5em; border-radius: 50%; border: 1px solid lightgray; z-index: 99; right: 20px; bottom: 20px; cursor: pointer; position: fixed; background-color: lightgray; display: none; }
+
+.fas.fa-arrow-up.fa-3x { color: whitesmoke; }
+
 @media screen and (max-width: 900px) { .left-panel-flex { display: none; } .right-panel-flex { width: 100%; } }
 
 @use 'base';
