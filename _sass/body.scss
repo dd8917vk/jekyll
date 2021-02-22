@@ -244,6 +244,23 @@ hr {
 
 }
 
+.bottom-footer {
+    padding-top: 4em;
+    display: flex;
+    flex-direction: column;
+    background-color: $bgColor3;
+    font-size: 1.6em;
+    padding-bottom: 4em;
+    align-items: center;
+    justify-content: center;
+}
+.bottom-footer a {
+    color: whitesmoke;
+}
+.bottom-footer p {
+    font-size: .5em;
+    color: whitesmoke;
+}
 //Media queries 800px or less
 @media screen and (max-width: 900px){
     //Hide left panel

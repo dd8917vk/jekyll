@@ -147,6 +147,12 @@ hr { border-top: 0.5px solid #cecece; width: 90%; }
 
 .twitter-bar p > i { color: #666666; }
 
+.bottom-footer { padding-top: 4em; display: flex; flex-direction: column; background-color: #333333; font-size: 1.6em; padding-bottom: 4em; align-items: center; justify-content: center; }
+
+.bottom-footer a { color: whitesmoke; }
+
+.bottom-footer p { font-size: .5em; color: whitesmoke; }
+
 @media screen and (max-width: 900px) { .left-panel-flex { display: none; } .right-panel-flex { width: 100%; } }
 
 @use 'base';
