@@ -79,6 +79,24 @@ hr { border-top: 0.5px solid #cecece; width: 90%; }
 
 .cash-back p a { color: #266f95; }
 
+.cash-back-p { display: flex; justify-content: center; flex-direction: column; }
+
+.cash-back-p > h5 { align-self: center; }
+
+.cash-back-percent { display: flex; justify-content: center; }
+
+.cash-back-percent > p { font-size: 3em; color: #266f95; margin-top: 10px; border-right: 2px solid lightgray; height: 50%; padding-right: 10px; }
+
+.cash-back-percent-more { margin-top: -9px; padding-left: 10px; }
+
+.cash-back-percent-more p { margin-bottom: -20px; }
+
+.cash-back-percent-more p:nth-child(1) { color: #266f95; }
+
+.cash-back-p > p { font-size: 12px; margin-top: -30px; align-self: center; }
+
+.cash-back-p > a { color: #266f95; font-size: 13px; margin-top: -10px; align-self: center; margin-bottom: 1em; }
+
 .left-panel-p { margin-left: 40px; }
 
 .contact-coupon { margin-left: 40px; }
