@@ -1,9 +1,3 @@
-# - name: Home
-#   link: /
-# - name: About
-#   link: /content/about.html
-# - name: About2
-#   link: /content/about2.html
 test: 'test'
 defaults:
   -
@@ -17,7 +11,7 @@ links:
     - name: Floaty
       url: "/merchants/GETFLOATY.html"
     - name: Contacts
-      url: "/merchants/1-800CONTACTS.html"
+      url: "/merchants/1800CONTACTS.html"
 ---
 ---
 ---
