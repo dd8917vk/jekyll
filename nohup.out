@@ -16,3 +16,15 @@ bash: no job control in this shell
 [90m[main 2021-03-08T21:19:08.704Z][0m update#setState checking for updates
 [90m[main 2021-03-08T21:19:08.792Z][0m update#setState available for download
 [11364:0308/154342.597158:ERROR:gl_utils.cc(314)] [.RendererMainThread-0x3bc96dd2e000] GL_INVALID_FRAMEBUFFER_OPERATION: Draw framebuffer is incomplete
+(node:11329) electron: The default of contextIsolation is deprecated and will be changing from false to true in a future release of Electron.  See https://github.com/electron/electron/issues/23506 for more information
+(node:46864) Electron: Loading non-context-aware native module in renderer: '/usr/share/code/resources/app/node_modules.asar.unpacked/vscode-sqlite3/build/Release/sqlite.node'. This is deprecated, see https://github.com/electron/electron/issues/18397.
+(node:46864) Electron: Loading non-context-aware native module in renderer: '/usr/share/code/resources/app/node_modules.asar.unpacked/spdlog/build/Release/spdlog.node'. This is deprecated, see https://github.com/electron/electron/issues/18397.
+(node:11329) electron: The default of contextIsolation is deprecated and will be changing from false to true in a future release of Electron.  See https://github.com/electron/electron/issues/23506 for more information
+(node:47475) Electron: Loading non-context-aware native module in renderer: '/usr/share/code/resources/app/node_modules.asar.unpacked/vscode-sqlite3/build/Release/sqlite.node'. This is deprecated, see https://github.com/electron/electron/issues/18397.
+(node:47475) Electron: Loading non-context-aware native module in renderer: '/usr/share/code/resources/app/node_modules.asar.unpacked/spdlog/build/Release/spdlog.node'. This is deprecated, see https://github.com/electron/electron/issues/18397.
+[11364:0309/071207.047429:ERROR:gl_utils.cc(314)] [.RendererMainThread-0x1bee8d1c7e00] GL_INVALID_FRAMEBUFFER_OPERATION: Draw framebuffer is incomplete
+(node:47475) Electron: Loading non-context-aware native module in renderer: '/usr/share/code/resources/app/node_modules.asar.unpacked/node-pty/build/Release/pty.node'. This is deprecated, see https://github.com/electron/electron/issues/18397.
+[11364:0309/071301.981322:ERROR:gl_utils.cc(314)] [.RendererMainThread-0x1bee8d1c7e00] GL_INVALID_FRAMEBUFFER_OPERATION: Draw framebuffer is incomplete
+[11364:0309/091145.701936:ERROR:gl_utils.cc(314)] [.RendererMainThread-0x3bc96dd2e000] GL_INVALID_FRAMEBUFFER_OPERATION: Draw framebuffer is incomplete
+[11364:0309/093529.966376:ERROR:gl_utils.cc(314)] [.RendererMainThread-0x3bc96dd2e000] GL_INVALID_FRAMEBUFFER_OPERATION: Draw framebuffer is incomplete
+[11364:0309/135852.745205:ERROR:gl_utils.cc(314)] [.RendererMainThread-0x3bc96dd2e000] GL_INVALID_FRAMEBUFFER_OPERATION: Draw framebuffer is incomplete
