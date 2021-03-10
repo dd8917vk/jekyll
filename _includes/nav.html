@@ -8,18 +8,18 @@
     <a class="leftedge" href="tech.html">Cash<br>Back</a>
     <a class="leftedge" href="games.html">Gift<br>Cards</a>
     <div class="dropdown">
-  <button class="dropbtn">Coupons</button>
-  <div class="dropdown-content">
+        <button class="dropbtn">Coupons</button>
+        <div class="dropdown-content">
     {% for item in site.data.links.links %}
-    <a href="{{ item.url }}">{{ item.name }}</a>
+        <a href="{{ item.url }}">{{ item.name }}</a>
     <!-- <a href="#">Floaty</a>
     <a href="#">Stoplight</a> -->
     {% endfor %}
     <!-- <a href="#">Contacts</a>
     <a href="#">Floaty</a>
     <a href="#">Stoplight</a> -->
-  </div>
-</div>
+        </div>
+    </div>
     <!-- <a class="leftedge" href="reviews.html">Store<br>Coupons</a> -->
     <a id="login" href="reviews.html">Login</a>
     <button id="signup" type="submit">Sign Up</button>
