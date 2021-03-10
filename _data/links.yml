@@ -1,7 +1,11 @@
 ---
 links:
+- name: 1800PetMeds
+  url: "/merchants/1800PetMeds.html"
 - name: 1StopLighting
   url: "/merchants/1StopLighting.html"
+- name: 1800Flowers
+  url: "/merchants/1800Flowers.html"
 - name: GETFLOATY
   url: "/merchants/GETFLOATY.html"
 - name: 1800CONTACTS
