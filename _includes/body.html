@@ -140,6 +140,9 @@
 
         </div>
         <div class="coupon-flex">
+            {% if page.url == "/" %}
+            <div>You are at the home page</div>
+            {% endif %}
             {% include card.html %}
         </div>
         <div>
