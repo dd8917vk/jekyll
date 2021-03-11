@@ -1,20 +1,25 @@
 <!-- For desktop layout -->
+{% for item in site.data._json %}
+{% if page.title == item[0] %}
 <div class="flex-header">
 	<div class="flex-chewy">
-		<img src="./assets/images/chewy.png" />
-		<div class="heart">
+		<!-- <img src="./assets/images/chewy.png" /> -->
+		<!-- <img src={{ item[1][1][0]["cImage"] }} alt="No Image" /> -->
+		<img src="https://www.logoarena.com/contestimages/public_new/7814/11842_1487073209_3.jpg" alt="No Image" />
+		<!-- <img src="https://img.icons8.com/plasticine/2x/google-logo.png"/> -->
+		<!-- <div class="heart">
 			<i class="fas fa-heart"></i>
-		</div>
+		</div> -->
 	</div>
 	<div class="flex-promo">
 		<div>
-			<h1>Chewy Promo Codes</h1>
+			<h1>{{ item[0] }}</h1>
 		</div>
 		<div class="flex-prices">
 			<div class="constrain_prices">
-				<p>$83 avg order</p>
-				<p>$24 avg saved</p>
-				<p>$15 shopping hacks</p>
+				<p>{{ item[1][1][0]["aCategories"][0]}}</p>
+				<p>{{ item[1][1][0]["aCategories"][1]}}</p>
+				<p>{{ item[1][1][0]["aCategories"][2]}}</p>
 			</div>
 		</div>
 		<div class="flex-stars">
@@ -23,7 +28,9 @@
 			<span class="fa fa-star checked"></span>
 			<span class="fa fa-star checked"></span>
 			<span class="fa fa-star checked"></span>
-			<span>(578)</span>
+			<span>{{ item[1][1][0]["fRating"] }}</span>
 		</div>
 	</div>
 </div>
+{% endif %}
+{% endfor %}

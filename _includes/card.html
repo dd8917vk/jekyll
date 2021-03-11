@@ -1,27 +1,31 @@
-{% for item in site.data.navigation.coupon %}
+{% for item in site.data._json %}
+{% if page.title == item[0] %}
+{% for content in item[1][1] %}
 <div class="card-flex-background">
     <div class="card-flex-background-p">
         <p>Today's best offer</p>
-        <p>FEBRUARY 26th 2019</p>
+        <!-- <p>{{item[1][1][1]["cMerchant"]}}</p>
+        <p>{{item[1][1][1]["cLastUpdated"]}}</p> -->
+        <p>{{ content["cLabel"] }}</p>
+        <p>{{ content["cStatus"] }}</p>
     </div>
     <div class="card-flex">
         <div class="card-flex-top">
-            <p>SALE</p>
+            <p>{{ content["cMerchant"] }}</p>
 	        <p><i class="fas fa-heart"></i></p>
         </div>
         <div class="card-flex-mid">
             <div class="card-flex-mid-left">
                 <div class="coupon-label">
                     <div class="coupon-square">
-                        <p>{{ item.amount }}</p>
-                        <p>OFF</p>
+                        <p>{{ content["nPercent"]}}% OFF</p>
                     </div>
                     <div class="coupon-triangle">
                     </div>
                 </div>
                 <div class="coupon-text">
-                    <h2>{{ item.amount }} off</h2>
-                    <p>Purchases of 50% off or more</p>
+                    <h2>{{ content["nPercent"] }}% off</h2>
+                    <p>{{ content["cLabel"] }}</p>
                 </div>
             </div>
             <div class="card-flex-mid-right">
@@ -29,18 +33,19 @@
                     <span class="fa fa-star checked"></span>
                     <span>TOP OFFER</span>
                 </div>
-                <button class="card-flex-mid-button">Get Coupon</button>
+                <a href={{ content["cDirectURL"] }} target="_blank"><button class="card-flex-mid-button">Get Coupon</button></a>
                 <a href="#">This coupon works heres the proof</a>
             </div>
         </div>
         <hr id="card-flex-bottom-seperator">
         <div class="card-flex-bottom">
-            <p>{{ item.saved }} avg saved</p>
-            <p>{{ item.used }} used today</p>
-            <p>Ends {{ site.time }}</p>
+            <p>SAVE AND USE TODAY!</p>
+            <p>Updated {{ content["cLastUpdated"] }}</p>
         </div>
     </div>
 </div>
+{% endfor %}
+{% endif %}
 {% endfor %}
 <script>
     window.onload = () => {
@@ -53,4 +58,6 @@
         cardBoxShadow[0].style.boxShadow = "none";
         console.log(cardBoxShadow[0]);
     }
+// {% for item in site.data.navigation.coupon %}
+// {% endfor %}
 </script>
