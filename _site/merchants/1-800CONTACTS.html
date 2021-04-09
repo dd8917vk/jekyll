@@ -483,10 +483,11 @@ let myTopNav = () => {
     }
     const setTopCard = () => {
         let cardCollection = document.getElementsByClassName("card-flex-background");
-        cardCollection[0].className = "card-flex-background-apply";
-        let cardBoxShadow = document.getElementsByClassName("card-flex");
-        cardBoxShadow[0].style.boxShadow = "none";
-        console.log(cardBoxShadow[0]);
+        if (cardCollection.length > 0) {
+            cardCollection[0].className = "card-flex-background-apply";
+            let cardBoxShadow = document.getElementsByClassName("card-flex");
+            cardBoxShadow[0].style.boxShadow = "none";
+        }
     }
 // 
 </script>
