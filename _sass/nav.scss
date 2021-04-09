@@ -1,160 +1,174 @@
-
 @use 'base';
 
 #hamnav {
-  width: 100%;
-  background-image: linear-gradient(to right, #1f5999, #269d8f);
-  /* Optional */
-  position: sticky;
-  top: 0;
-  height: 4em;
-  padding-top: 20px;
-  z-index: 1;
+	width: 100%;
+	background-image: linear-gradient(to right, #1f5999, #269d8f);
+	/* Optional */
+	position: sticky;
+	top: 0;
+	height: 4em;
+	padding-top: 20px;
+	z-index: 1;
 }
 #hamnav input {
-    height: 3em;
-    margin-top: auto;
-    margin-bottom: auto;
-    border: 1px solid white;
-    border-radius: 3px;
-    margin-left: -80px;
+	height: 3em;
+	margin-top: auto;
+	margin-bottom: auto;
+	border: 1px solid white;
+	border-radius: 3px;
+	margin-left: -80px;
 }
 /* Hide Hamburger */
-#hamnav label, #hamburger { display: none; }
+#hamnav label,
+#hamburger {
+	display: none;
+}
 
 /* Horizontal Menu Items */
-#hamitems { 
-  display: flex; 
-  margin-left: 10em;
-  margin-right: 10em;
+#hamitems {
+	display: flex;
+	margin-left: 10em;
+	margin-right: 10em;
 }
-
 
 #hamitems a {
-  // width: 10%; /* 100% / 5 tabs = 20% */
-  padding: 10px;
-  color: white;
-  text-decoration: none;
-  justify-content:center;
+	// width: 10%; /* 100% / 5 tabs = 20% */
+	padding: 10px;
+	color: white;
+	text-decoration: none;
+	justify-content: center;
 }
 #hamitems #logo {
-  margin-right: 4em;
-  white-space: nowrap;
-  font-size: 1.5em;
+	margin-right: 4em;
+	white-space: nowrap;
+	font-size: 1.5em;
 }
 .leftedge {
-  border-width: 2px;
-  border-left-style:solid;
-  border-image: 
-  linear-gradient(transparent, gray, transparent) 1 100%;
+	border-width: 2px;
+	border-left-style: solid;
+	border-image: linear-gradient(transparent, gray, transparent) 1 100%;
 }
 .logoCenter {
-    text-align:center;
-    margin: auto auto;
-    margin-left: 40%;
-    width: 10%;
-    display: inline-block;
-    
-    
+	text-align: center;
+	margin: auto auto;
+	margin-left: 40%;
+	width: 10%;
+	display: inline-block;
 }
 // #hamitems a:hover {
 //   background: #401408;
 // }
 #login {
-  margin-left: 2em;
+	margin-left: 2em;
 }
 #signup {
-    height: 30px;
-    min-width: 5em;
-    margin-top: .5em;
-    border-radius: 30px;
-    border: 1px solid white;
-    background-color: whitesmoke;
+	height: 30px;
+	min-width: 5em;
+	margin-top: 0.5em;
+	border-radius: 30px;
+	border: 1px solid white;
+	background-color: whitesmoke;
+}
+#login {
+	height: 30px;
+	min-width: 5em;
+	margin-top: 0.5em;
+	border-radius: 30px;
+	border: 1px solid white;
+	background-color: whitesmoke;
 }
 .dropbtn {
-  background-color: transparent; 
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
+	background-color: transparent;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
 }
 
 .dropdown {
-  position: relative;
-  display: inline-block;
+	position: relative;
+	display: inline-block;
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #269d8f;
-  min-width: 400px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  right: 0;
+	display: none;
+	position: absolute;
+	background-color: #269d8f;
+	min-width: 400px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	right: 0;
 }
 
 .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
 }
 
-.dropdown-content a:hover {background-color: #1f5999;}
-
-.dropdown:hover .dropdown-content {display: flex; flex-wrap: wrap;}
-
-.dropdown:hover .dropbtn {background-color: #269d8f;}
-@media screen and (max-width: 900px){
-  /* Show Hamburger Icon */
-  #hamnav label { 
-    display: inline-block; 
-    color: white;
-    font-style: normal;
-    font-size: 1.2em;
-    padding: 10px;
-  }
-
-  /* Break down menu items into vertical */
-  #hamitems a {
-    box-sizing: border-box;
-    display: block;
-    width: 100%;
-    color:black;
-  }
-
-  #hamitems { display: none;}
-  #hamnav input:checked ~ #hamitems { 
-      display: block; 
-      position: absolute; 
-      background-color:white;
-      width: 300px;
-      height: 100vh;
-      margin-left: 0;
-      margin-top: 22px;
-  }
-
-}
-html, body {
-  padding: 0;
-  margin: 0;
-  font-family: arial, sans-serif;
+.dropdown-content a:hover {
+	background-color: #1f5999;
 }
 
-@media screen and (max-width: 1340px){
-  #hamitems #logo {
-    margin-right: 6em;
-    // margin-right: 4em;
-    white-space: nowrap;
-    font-size: 1.5em
-  }
-  .logoCenter a{
-    margin: auto auto;
-    white-space: nowrap;
-    color: whitesmoke;
-  }
+.dropdown:hover .dropdown-content {
+	display: flex;
+	flex-wrap: wrap;
+}
 
+.dropdown:hover .dropbtn {
+	background-color: #269d8f;
+}
+@media screen and (max-width: 900px) {
+	/* Show Hamburger Icon */
+	#hamnav label {
+		display: inline-block;
+		color: white;
+		font-style: normal;
+		font-size: 1.2em;
+		padding: 10px;
+	}
+
+	/* Break down menu items into vertical */
+	#hamitems a {
+		box-sizing: border-box;
+		display: block;
+		width: 100%;
+		color: black;
+	}
+
+	#hamitems {
+		display: none;
+	}
+	#hamnav input:checked ~ #hamitems {
+		display: block;
+		position: absolute;
+		background-color: white;
+		width: 300px;
+		height: 100vh;
+		margin-left: 0;
+		margin-top: 22px;
+	}
+}
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: arial, sans-serif;
+}
+
+@media screen and (max-width: 1340px) {
+	#hamitems #logo {
+		margin-right: 6em;
+		// margin-right: 4em;
+		white-space: nowrap;
+		font-size: 1.5em;
+	}
+	.logoCenter a {
+		margin: auto auto;
+		white-space: nowrap;
+		color: whitesmoke;
+	}
 }
 // .topnav {
 //     background-image: linear-gradient(to right, #1f5999, #269d8f);
@@ -167,7 +181,7 @@ html, body {
 //     // #269d8f gradient
 // }
 
-// /* 
+// /*
 // Style the links inside the navigation bar */
 // .topnav a {
 //     display: inline-block;
@@ -179,12 +193,12 @@ html, body {
 //     word-wrap: break-word;
 //     padding-left: 10px;
 //     margin-bottom: 25px;
-    
+
 // }
 // .topnav a.gradient {
 //     border-width: 3px;
 //     border-left-style:solid;
-//     border-image: 
+//     border-image:
 //         linear-gradient(transparent, gray, transparent) 1 100%;
 // }
 // // .topnav a:hover {
@@ -202,14 +216,14 @@ html, body {
 // }
 // .topnav .icon {
 //     display: none;
-// } 
+// }
 
 // .inpt {
 //     border-radius: 4px;
 //     border: 1px solid black;
 //     height: 50px;
 //     font-size: 15px;
-    
+
 // }
 
 // .btn {
