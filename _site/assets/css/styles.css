@@ -71,13 +71,13 @@ body { background-color: whitesmoke; }
 
 .logo-image { width: 20px; height: 10px; }
 
-.left-panel-flex { display: flex; width: 25%; flex-direction: column; margin-left: 20px; position: sticky; }
+.left-panel-flex { display: flex; width: 25%; flex-direction: column; margin-left: 20px; position: sticky; color: black; }
 
 .left-panel-top-button { margin-top: 2em; display: flex; margin-bottom: 20px; flex-direction: column; justify-content: center; }
 
-.left-panel-top-button p { font-size: 13px; margin: auto auto; color: gray; padding-top: 5px; }
+.left-panel-top-button p { font-size: 13px; margin: auto auto; color: black; padding-top: 5px; }
 
-.left-panel-button-actual { border-radius: 30px; background-color: #ff003b; margin: auto auto; border: 1px solid #ff003b; width: 75%; height: 3em; color: whitesmoke; font-size: 18px; }
+.left-panel-button-actual { border-radius: 30px; background-color: #ff003b; margin: auto auto; border: 1px solid #ff003b; width: 75%; height: 3em; color: black; font-size: 18px; }
 
 .radio-selections { margin: 0 auto; margin-bottom: 1em; }
 
@@ -183,7 +183,7 @@ hr { border-top: 0.5px solid #cecece; width: 90%; }
 
 .bottom-footer a { color: whitesmoke; }
 
-.bottom-footer p { font-size: .5em; color: whitesmoke; }
+.bottom-footer p { font-size: 0.5em; color: whitesmoke; }
 
 .scroll-button { width: 5em; height: 5em; border-radius: 50%; border: 1px solid lightgray; z-index: 99; right: 20px; bottom: 20px; cursor: pointer; position: fixed; background-color: lightgray; display: none; }
 

@@ -25,106 +25,104 @@
 	</head>
 	<body>
 		<nav id="hamnav">
-  <label for="hamburger">&#9776;</label>
-  <input type="checkbox" id="hamburger"/>
-  <div id="hamitems">
-    <a id="logo" href="/">COUPON<i class="fas fa-home"></i>CABIN</a>
-    <input id="ipt" class="showInput" type="text" placeholder="Coupon search"/>
-    <a href="about.html">Promo<br>Codes</a>
-    <a class="leftedge" href="tech.html">Cash<br>Back</a>
-    <a class="leftedge" href="games.html">Gift<br>Cards</a>
-    <div class="dropdown">
-        <button class="dropbtn">Coupons</button>
-        <div class="dropdown-content">
-    
-        <a href="/merchants/1-800-PetMeds.html">1-800-PetMeds</a>
-    <!-- <a href="#">Floaty</a>
+	<label for="hamburger">&#9776;</label>
+	<input type="checkbox" id="hamburger" />
+	<div id="hamitems">
+		<a id="logo" href="/">COUPON<i class="fas fa-home"></i>CABIN</a>
+		<input id="ipt" class="showInput" type="text" placeholder="Coupon search" />
+		<a href="about.html">Promo<br />Codes</a>
+		<a class="leftedge" href="tech.html">Cash<br />Back</a>
+		<a class="leftedge" href="games.html">Gift<br />Cards</a>
+		<div class="dropdown">
+			<button class="dropbtn">Coupons</button>
+			<div class="dropdown-content">
+				
+				<a href="/merchants/1-800-PetMeds.html">1-800-PetMeds</a>
+				<!-- <a href="#">Floaty</a>
     <a href="#">Stoplight</a> -->
-    
-        <a href="/merchants/1StopLighting.html">1StopLighting</a>
-    <!-- <a href="#">Floaty</a>
+				
+				<a href="/merchants/1StopLighting.html">1StopLighting</a>
+				<!-- <a href="#">Floaty</a>
     <a href="#">Stoplight</a> -->
-    
-        <a href="/merchants/1-800-Flowers.html">1-800-Flowers</a>
-    <!-- <a href="#">Floaty</a>
+				
+				<a href="/merchants/1-800-Flowers.html">1-800-Flowers</a>
+				<!-- <a href="#">Floaty</a>
     <a href="#">Stoplight</a> -->
-    
-        <a href="/merchants/GETFLOATY.html">GETFLOATY</a>
-    <!-- <a href="#">Floaty</a>
+				
+				<a href="/merchants/GETFLOATY.html">GETFLOATY</a>
+				<!-- <a href="#">Floaty</a>
     <a href="#">Stoplight</a> -->
-    
-        <a href="/merchants/1-800CONTACTS.html">1-800CONTACTS</a>
-    <!-- <a href="#">Floaty</a>
+				
+				<a href="/merchants/1-800CONTACTS.html">1-800CONTACTS</a>
+				<!-- <a href="#">Floaty</a>
     <a href="#">Stoplight</a> -->
-    
-        <a href="/merchants/1DrivingSchool.html">1DrivingSchool</a>
-    <!-- <a href="#">Floaty</a>
+				
+				<a href="/merchants/1DrivingSchool.html">1DrivingSchool</a>
+				<!-- <a href="#">Floaty</a>
     <a href="#">Stoplight</a> -->
-    
-    <!-- <a href="#">Contacts</a>
+				
+				<!-- <a href="#">Contacts</a>
     <a href="#">Floaty</a>
     <a href="#">Stoplight</a> -->
-        </div>
-    </div>
-    <!-- <a class="leftedge" href="reviews.html">Store<br>Coupons</a> -->
-    <a id="login" href="reviews.html">Login</a>
-    <button id="signup" type="submit">Sign Up</button>
-  </div>
+			</div>
+		</div>
+		<!-- <a class="leftedge" href="reviews.html">Store<br>Coupons</a> -->
+		<!-- <a id="login" href="reviews.html">Login</a> -->
+		<button id="signup" type="submit">Login</button>
+		<button id="signup" type="submit">Sign Up</button>
+	</div>
 </nav>
 <script>
-window.onload = () => {
-    windowSize();
-}
-const watchWindow = (win) => {
-    //if window less than or equal to 768px
-    if (win.matches) {
-        document.getElementById("ipt").style.display = "none";
-        // document.getElementById("logo").style.display = "none";
-        let logo = document.getElementById("hamnav");
-        let div = document.createElement("DIV");
-        div.className = "logoCenter";
-        // let txt = document.createTextNode("Logo");
-        div.innerHTML = '<a id="logo" href="index.html">COUPON<i class="fas fa-home"></i>CABIN</a>';
-        // div.appendChild(txt)
-        logo.append(div);
+	window.onload = () => {
+		windowSize();
+	};
+	const watchWindow = (win) => {
+		//if window less than or equal to 768px
+		if (win.matches) {
+			document.getElementById("ipt").style.display = "none";
+			// document.getElementById("logo").style.display = "none";
+			let logo = document.getElementById("hamnav");
+			let div = document.createElement("DIV");
+			div.className = "logoCenter";
+			// let txt = document.createTextNode("Logo");
+			div.innerHTML =
+				'<a id="logo" href="index.html">COUPON<i class="fas fa-home"></i>CABIN</a>';
+			// div.appendChild(txt)
+			logo.append(div);
 
-        // let mGlass = document.createElement("i");
-        // mGlass.classList.add("fas");
-        // mGlass.classList.add("fa-search");
-        // let elem = document.getElementById("myTopnav");
-        // elem.appendChild(mGlass);
-        // document.body.style.backgroundColor = "yellow";
-    } else {
-        try{
-            let inpt = document.getElementById("ipt");
-            inpt.style.cssText = "";
-            let logo = document.getElementById("logo");
-            logo.style.cssText = "";
-            let responsiveLogo = document.getElementsByClassName("logoCenter");
-            responsiveLogo[0].remove();
-        } catch {
-            console.log('Removing logo failed')
-        }
-        
-        // inpt.style = ""
-        
+			// let mGlass = document.createElement("i");
+			// mGlass.classList.add("fas");
+			// mGlass.classList.add("fa-search");
+			// let elem = document.getElementById("myTopnav");
+			// elem.appendChild(mGlass);
+			// document.body.style.backgroundColor = "yellow";
+		} else {
+			try {
+				let inpt = document.getElementById("ipt");
+				inpt.style.cssText = "";
+				let logo = document.getElementById("logo");
+				logo.style.cssText = "";
+				let responsiveLogo = document.getElementsByClassName("logoCenter");
+				responsiveLogo[0].remove();
+			} catch {
+				console.log("Removing logo failed");
+			}
 
-        // let icon = document.getElementsByClassName("fas fa-search")
-        // icon[0].remove()
-        
-        // document.body.style.backgroundColor = "pink";
-    }
-}
-const windowSize = () => {
-    let win = window.matchMedia("(max-width: 768px)");
-    watchWindow(win)
-    win.addListener(watchWindow);
-}
+			// inpt.style = ""
 
+			// let icon = document.getElementsByClassName("fas fa-search")
+			// icon[0].remove()
 
+			// document.body.style.backgroundColor = "pink";
+		}
+	};
+	const windowSize = () => {
+		let win = window.matchMedia("(max-width: 768px)");
+		watchWindow(win);
+		win.addListener(watchWindow);
+	};
 </script>
 
-  
 <!-- <div class="topnav" id="myTopnav">
     <a href="javascript:void(0);" class="icon" onclick="myTopNav()"><i class="fa fa-bars"></i></a>
     <a href="#home" class="active" id="down">Logo</a>
@@ -171,7 +169,8 @@ let myTopNav = () => {
     let y = document.getElementById("down");
     y.className == "active" ? y.className += " responsive" : y.className = "active"
 } -->
-<!-- </script> --> <!-- For desktop layout -->
+<!-- </script> -->
+ <!-- For desktop layout -->
    
 <div class="flex-header">
 	<div class="flex-chewy">
