@@ -1,7 +1,11 @@
 .current { color: green; }
 
 @use 'base';
-#hamnav { width: 100%; background-color: #242f40; /* Optional */ position: sticky; top: 0; height: 96px; padding-top: 20px; z-index: 1; font-family: "Roboto"; font-size: 18px; font-weight: normal; font-stretch: normal; font-style: normal; line-height: normal; letter-spacing: normal; }
+#hamnav { width: 100vw; background-color: #242f40; /* Optional */ position: sticky; top: 0; height: 96px; padding-top: 20px; z-index: 1; font-family: "Roboto"; font-size: 18px; font-weight: normal; font-stretch: normal; font-style: normal; line-height: normal; letter-spacing: normal; }
+
+.resizeLoginSignup { display: flex; }
+
+.searchForm { display: flex; }
 
 #searchform { margin-left: -80px; border-radius: 3px; border: 1px solid white; display: flex; flex-direction: row; height: 3em; }
 
@@ -23,9 +27,7 @@
 
 #hamitems #logo { white-space: nowrap; }
 
-#login { margin-left: 2em; }
-
-#signup { font-size: 16px; }
+#signup { font-size: 16px; margin-right: 10px; }
 
 #login { font-size: 16px; }
 
@@ -41,7 +43,7 @@
 
 .dropdown:hover .dropbtn { background-color: #269d8f; }
 
-@media screen and (max-width: 900px) { /* Show Hamburger Icon */ #hamnav label { display: inline-block; color: white; font-style: normal; font-size: 1.2em; padding: 10px; } /* Break down menu items into vertical */ #hamitems a { box-sizing: border-box; display: block; width: 100%; color: black; } #hamitems { display: none; } #hamnav input:checked ~ #hamitems { display: block; position: absolute; background-color: white; width: 300px; height: 100vh; margin-left: 0; margin-top: 22px; } }
+@media screen and (max-width: 900px) { /* Show Hamburger Icon */ #hamnav label { display: inline-block; color: white; font-style: normal; font-size: 1.2em; padding: 10px; } /* Break down menu items into vertical */ #hamitems a { box-sizing: border-box; display: block; width: 100%; color: black; } #hamitems { display: none; } #hamnav input:checked ~ #hamitems { display: block; position: absolute; background-color: white; width: 100vw; height: 100vh; margin-left: 0; margin-top: 40px; } #hamnav input:checked ~ #hamitems #logo { display: none; } #hamnav input:checked ~ #hamitems #searchform { margin-top: 1em; margin-left: 25%; border: 1px solid black; width: 272px; } #hamnav input:checked ~ #hamitems .resizeLoginSignup { flex-direction: column; margin-top: 100px; } #hamnav input:checked ~ #hamitems .searchForm { background-color: #e5e5e5; margin-top: -20px; height: 100px; justify-content: center; } }
 
 html, body { padding: 0; margin: 0; font-family: arial, sans-serif; }
 

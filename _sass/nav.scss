@@ -1,7 +1,7 @@
 @use 'base';
 
 #hamnav {
-	width: 100%;
+	width: 100vw;
 	// background-image: linear-gradient(to right, #1f5999, #269d8f);
 	background-color: #242f40;
 	/* Optional */
@@ -18,7 +18,12 @@
 	line-height: normal;
 	letter-spacing: normal;
 }
-
+.resizeLoginSignup {
+	display: flex;
+}
+.searchForm {
+	display: flex;
+}
 #searchform {
 	margin-left: -80px;
 	border-radius: 3px;
@@ -76,37 +81,13 @@
 #hamitems #logo {
 	white-space: nowrap;
 }
-// .leftedge {
-// 	border-width: 2px;
-// 	border-left-style: solid;
-// 	border-image: linear-gradient(transparent, gray, transparent) 1 100%;
-// }
-// .logoCenter {
-// 	text-align: center;
-// 	margin: auto auto;
-// 	margin-left: 40%;
-// 	width: 10%;
-// 	display: inline-block;
-// }
-// #hamitems a:hover {
-//   background: #401408;
-// }
-#login {
-	margin-left: 2em;
-}
 #signup {
 	font-size: 16px;
+	margin-right: 10px;
 }
 #login {
 	font-size: 16px;
 }
-// .dropbtn {
-// 	background-color: transparent;
-// 	color: white;
-// 	padding: 16px;
-// 	font-size: 16px;
-// 	border: none;
-// }
 
 .dropdown {
 	position: relative;
@@ -167,10 +148,29 @@
 		display: block;
 		position: absolute;
 		background-color: white;
-		width: 300px;
+		width: 100vw;
 		height: 100vh;
 		margin-left: 0;
-		margin-top: 22px;
+		margin-top: 40px;
+	}
+	#hamnav input:checked ~ #hamitems #logo {
+		display: none;
+	}
+	#hamnav input:checked ~ #hamitems #searchform {
+		margin-top: 1em;
+		margin-left: 25%;
+		border: 1px solid black;
+		width: 272px;
+	}
+	#hamnav input:checked ~ #hamitems .resizeLoginSignup {
+		flex-direction: column;
+		margin-top: 100px;
+	}
+	#hamnav input:checked ~ #hamitems .searchForm {
+		background-color: #e5e5e5;
+		margin-top: -20px;
+		height: 100px;
+		justify-content: center;
 	}
 }
 html,
