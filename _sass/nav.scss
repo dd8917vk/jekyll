@@ -57,9 +57,6 @@
 	margin-left: 50px;
 	// padding-bottom: 20px;
 }
-#hamitems #ipt {
-	margin-left: -120px;
-}
 #hamitems #iptLogo {
 	margin-left: -51px;
 	background-color: #218380;
@@ -167,7 +164,7 @@
 		margin-top: 100px;
 	}
 	#hamnav input:checked ~ #hamitems .searchForm {
-		background-color: #e5e5e5;
+		background-color: white;
 		margin-top: -20px;
 		height: 100px;
 		justify-content: center;
