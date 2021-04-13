@@ -1,29 +1,23 @@
 <nav id="hamnav">
 	<label for="hamburger">&#9776;</label>
-	<input type="checkbox" id="hamburger" />
+	<input type="checkbox" id="hamburger"/>
 	<div id="hamitems">
-		<a id="logo" href="/">COUPON CABIN</a>
-		<input id="ipt" class="showInput" type="text" placeholder="Coupon search" />
-		<a href="about.html">Promo<br />Codes</a>
-		<a class="leftedge" href="tech.html">Cash<br />Back</a>
-		<a class="leftedge" href="games.html">Gift<br />Cards</a>
-		<div class="dropdown">
-			<button class="dropbtn">Coupons</button>
-			<div class="dropdown-content">
-				{% for item in site.data.links.links %}
-				<a href="{{ item.url }}">{{ item.name }}</a>
-				<!-- <a href="#">Floaty</a>
-    <a href="#">Stoplight</a> -->
-				{% endfor %}
-				<!-- <a href="#">Contacts</a>
-    <a href="#">Floaty</a>
-    <a href="#">Stoplight</a> -->
-			</div>
-		</div>
-		<!-- <a class="leftedge" href="reviews.html">Store<br>Coupons</a> -->
-		<!-- <a id="login" href="reviews.html">Login</a> -->
-		<button id="login" type="submit">Login</button>
-		<button id="signup" type="submit">Sign Up</button>
+		<a id="logo" href="/"><img src="/assets/images/logo.png"></img></a>
+		<!-- <input id="ipt" class="showInput" type="text" placeholder="Coupon search"/> -->
+		<!-- <input id="iptLogo" type="submit" value=""></input> -->
+		<form id="searchform">
+  			<input id="searchinput" placeholder="Coupon Search"/>
+  			<button id="searchbutton"><img src="/assets/images/savr-icon-search.svg"></img></button>
+		</form>
+
+		<a href="about.html">Promo Codes</a>
+		<a class="" href="tech.html">Cash Back</a>
+		<a class="" href="games.html">Gift Cards</a>
+		<a class="" href="games.html">Coupons</a>
+		<a id="login" href="about.html">LOGIN</a>
+		<a id="signup" href="about.html">SIGNUP</a>
+		<!-- <button id="login" type="submit">Login</button>
+		<button id="signup" type="submit">Sign Up</button> -->
 	</div>
 </nav>
 <script>

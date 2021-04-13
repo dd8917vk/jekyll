@@ -12,6 +12,11 @@
 		<meta name="keywords" content="coupons, deals, sales, sale" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="/assets/css/styles.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+			rel="stylesheet"
+		/>
 		<!-- <link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -26,50 +31,24 @@
 	<body>
 		<nav id="hamnav">
 	<label for="hamburger">&#9776;</label>
-	<input type="checkbox" id="hamburger" />
+	<input type="checkbox" id="hamburger"/>
 	<div id="hamitems">
-		<a id="logo" href="/">COUPON CABIN</a>
-		<input id="ipt" class="showInput" type="text" placeholder="Coupon search" />
-		<a href="about.html">Promo<br />Codes</a>
-		<a class="leftedge" href="tech.html">Cash<br />Back</a>
-		<a class="leftedge" href="games.html">Gift<br />Cards</a>
-		<div class="dropdown">
-			<button class="dropbtn">Coupons</button>
-			<div class="dropdown-content">
-				
-				<a href="/merchants/1-800-PetMeds.html">1-800-PetMeds</a>
-				<!-- <a href="#">Floaty</a>
-    <a href="#">Stoplight</a> -->
-				
-				<a href="/merchants/1StopLighting.html">1StopLighting</a>
-				<!-- <a href="#">Floaty</a>
-    <a href="#">Stoplight</a> -->
-				
-				<a href="/merchants/1-800-Flowers.html">1-800-Flowers</a>
-				<!-- <a href="#">Floaty</a>
-    <a href="#">Stoplight</a> -->
-				
-				<a href="/merchants/GETFLOATY.html">GETFLOATY</a>
-				<!-- <a href="#">Floaty</a>
-    <a href="#">Stoplight</a> -->
-				
-				<a href="/merchants/1-800CONTACTS.html">1-800CONTACTS</a>
-				<!-- <a href="#">Floaty</a>
-    <a href="#">Stoplight</a> -->
-				
-				<a href="/merchants/1DrivingSchool.html">1DrivingSchool</a>
-				<!-- <a href="#">Floaty</a>
-    <a href="#">Stoplight</a> -->
-				
-				<!-- <a href="#">Contacts</a>
-    <a href="#">Floaty</a>
-    <a href="#">Stoplight</a> -->
-			</div>
-		</div>
-		<!-- <a class="leftedge" href="reviews.html">Store<br>Coupons</a> -->
-		<!-- <a id="login" href="reviews.html">Login</a> -->
-		<button id="login" type="submit">Login</button>
-		<button id="signup" type="submit">Sign Up</button>
+		<a id="logo" href="/"><img src="/assets/images/logo.png"></img></a>
+		<!-- <input id="ipt" class="showInput" type="text" placeholder="Coupon search"/> -->
+		<!-- <input id="iptLogo" type="submit" value=""></input> -->
+		<form id="searchform">
+  			<input id="searchinput" placeholder="Coupon Search"/>
+  			<button id="searchbutton"><img src="/assets/images/savr-icon-search.svg"></img></button>
+		</form>
+
+		<a href="about.html">Promo Codes</a>
+		<a class="" href="tech.html">Cash Back</a>
+		<a class="" href="games.html">Gift Cards</a>
+		<a class="" href="games.html">Coupons</a>
+		<a id="login" href="about.html">LOGIN</a>
+		<a id="signup" href="about.html">SIGNUP</a>
+		<!-- <button id="login" type="submit">Login</button>
+		<button id="signup" type="submit">Sign Up</button> -->
 	</div>
 </nav>
 <script>
@@ -210,153 +189,6 @@ let myTopNav = () => {
 </div>
  
  <div class="body-flex">
-	<div class="left-panel-flex">
-		<div class="left-panel-top-button">
-			<button class="left-panel-button-actual">Shop Now</button>
-			<p>Trusted partner since 1900</p>
-		</div>
-		<div class="radio-selections">
-			<div>
-				<input id="all" type="radio" class="radio" value="all" />
-				<label for="all">All</label>
-			</div>
-
-			<div>
-				<input id="radio" class="radio" type="radio" value="codes" />
-				<label for="radio">Codes</label>
-			</div>
-			<div>
-				<input id="shipping" class="radio" type="radio" value="ship" />
-				<label for="shipping">Free Shipping</label>
-			</div>
-			<div>
-				<input id="trending" class="radio" type="radio" value="trending" />
-				<label for="trending">Trending</label>
-			</div>
-			<div>
-				<input id="exclusive" class="radio" type="radio" value="exclusive" />
-				<label for="exclusive">Exclusive</label>
-			</div>
-			<div>
-				<input id="sales" class="radio" type="radio" value="sales" />
-				<label for="sales">Sales</label>
-			</div>
-			<div>
-				<input id="grocery" class="radio" type="radio" value="grocery" />
-				<label for="grocery">Grocery</label>
-			</div>
-			<div>
-				<input id="offers" class="radio" type="radio" value="free" />
-				<label for="offers">Free Offers</label>
-			</div>
-			<div>
-				<input id="expires" class="radio" type="radio" value="expire" />
-				<label for="expires">Expires Soon</label>
-			</div>
-		</div>
-		<hr />
-		<div class="cash-back">
-			<p>Get paid to shop at Chewy</p>
-			<!-- <i class="fas fa-user-friends"></i>
-			<i class="fas fa-arrows-alt-h"></i>
-			<i class="fas fa-home"></i> -->
-			<p><a href="#">How cash back works >></a></p>
-		</div>
-		<hr />
-		<div class="cash-back-p">
-			<p>Cash back</p>
-			<div class="cash-back-percent">
-				<p>3.1%</p>
-				<div class="cash-back-percent-more">
-					<p>3%</p>
-					<p>More</p>
-					<p>Than</p>
-					<p>Rakuten</p>
-				</div>
-			</div>
-			<p>3% at Rakuten as of today</p>
-			<a href="#">See more rates >></a>
-		</div>
-		<hr />
-		<div class="star-body">
-			<p>Based on 538 ratings. Add Yours:</p>
-			<span class="fa fa-star checked"></span>
-			<span class="fa fa-star checked"></span>
-			<span class="fa fa-star checked"></span>
-			<span class="fa fa-star checked"></span>
-			<span class="fa fa-star checked"></span>
-		</div>
-		<hr />
-		<div class="left-panel-p">
-			<p>Some text to tell you how awesome we are today</p>
-			<p>
-				text ever since the 1500s, when an unknown printer took a galley of type
-				and scrambled it to make a type specimen book. It has survived not only
-				five
-			</p>
-		</div>
-		<div class="left-panel-p">
-			<p>Some more random text that will explain how we can use your money</p>
-			<p>
-				text ever since the 1500s, when an unknown printer took a galley of type
-				and scrambled it to make a type specimen book. It has survived not only
-				five
-			</p>
-		</div>
-		<div class="left-panel-p">
-			<p>Chewy coupons are the best on our website.</p>
-			<p>
-				text ever since the 1500s, when an unknown printer took a galley of type
-				and scrambled it to make a type specimen book. It has survived not only
-				five
-			</p>
-		</div>
-		<div class="left-panel-p">
-			<p>How art thou oh parrot fro ma foreign island this is not lorum</p>
-			<p>
-				text ever since the 1500s, when an unknown printer took a galley of type
-				and scrambled it to make a type specimen book. It has survived not only
-				five
-			</p>
-		</div>
-		<div class="left-panel-p">
-			<p>This is an amazing lightning fast deal</p>
-			<p>
-				text ever since the 1500s, when an unknown printer took a galley of type
-				and scrambled it to make a type specimen book. It has survived not only
-				five
-			</p>
-		</div>
-		<div class="left-panel-p">
-			<p>This would be much better if it was dynamic content.</p>
-			<p>
-				text ever since the 1500s, when an unknown printer took a galley of type
-				and scrambled it to make a type specimen book. It has survived not only
-				five
-			</p>
-		</div>
-		<div class="contact-coupon">
-			<p>Contact Chewy</p>
-			<hr />
-			<hr style="margin-top: -7px" />
-			<div class="left-frame-contact">
-				<p><i class="fas fa-phone"></i></p>
-				<p>888-442-3423</p>
-			</div>
-			<div class="left-frame-contact">
-				<p><i class="fas fa-envelope"></i></p>
-				<p>Email</p>
-			</div>
-			<div class="left-frame-contact">
-				<p><i class="fas fa-comment-dots"></i></p>
-				<p>Chat</p>
-			</div>
-			<div class="left-frame-contact">
-				<p><i class="fas fa-shipping-fast"></i></p>
-				<p>Shipping</p>
-			</div>
-		</div>
-	</div>
 	<div class="right-panel-flex">
 		<div class="info-bar-flex">
 			<div class="info-bar-flex-sub1">

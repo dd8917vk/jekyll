@@ -1,31 +1,33 @@
 .current { color: green; }
 
 @use 'base';
-#hamnav { width: 100%; background-image: linear-gradient(to right, #1f5999, #269d8f); /* Optional */ position: sticky; top: 0; height: 4em; padding-top: 20px; z-index: 1; }
+#hamnav { width: 100%; background-color: #242f40; /* Optional */ position: sticky; top: 0; height: 96px; padding-top: 20px; z-index: 1; font-family: "Roboto"; font-size: 18px; font-weight: normal; font-stretch: normal; font-style: normal; line-height: normal; letter-spacing: normal; }
 
-#hamnav input { height: 3em; margin-top: auto; margin-bottom: auto; border: 1px solid white; border-radius: 3px; margin-left: -80px; }
+#searchform { margin-left: -80px; border-radius: 3px; border: 1px solid white; display: flex; flex-direction: row; height: 3em; }
+
+#searchinput { border: 1px solid white; font-size: 18px; color: #636b77; }
+
+#searchbutton { border: 1px solid white; background-color: #218380; width: 50px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; }
 
 /* Hide Hamburger */
 #hamnav label, #hamburger { display: none; }
 
 /* Horizontal Menu Items */
-#hamitems { display: flex; margin-left: 10em; margin-right: 10em; }
+#hamitems { display: flex; align-items: center; margin-left: 50px; }
 
-#hamitems a { padding: 10px; color: white; text-decoration: none; justify-content: center; }
+#hamitems #ipt { margin-left: -120px; }
 
-#hamitems #logo { margin-right: 4em; white-space: nowrap; font-size: 1.5em; }
+#hamitems #iptLogo { margin-left: -51px; background-color: #218380; height: 3.2em; border: white; border-top-right-radius: 3px; border-bottom-right-radius: 3px; width: 50px; }
 
-.leftedge { border-width: 2px; border-left-style: solid; border-image: linear-gradient(transparent, gray, transparent) 1 100%; }
+#hamitems a { padding: 10px; color: white; text-decoration: none; }
 
-.logoCenter { text-align: center; margin: auto auto; margin-left: 40%; width: 10%; display: inline-block; }
+#hamitems #logo { white-space: nowrap; }
 
 #login { margin-left: 2em; }
 
-#signup { height: 30px; min-width: 5em; margin-top: 0.5em; border-radius: 30px; border: 1px solid white; background-color: whitesmoke; }
+#signup { font-size: 16px; }
 
-#login { height: 30px; min-width: 5em; margin-top: 0.5em; border-radius: 30px; border: 1px solid white; background-color: whitesmoke; }
-
-.dropbtn { background-color: transparent; color: white; padding: 16px; font-size: 16px; border: none; }
+#login { font-size: 16px; }
 
 .dropdown { position: relative; display: inline-block; }
 
@@ -43,7 +45,7 @@
 
 html, body { padding: 0; margin: 0; font-family: arial, sans-serif; }
 
-@media screen and (max-width: 1340px) { #hamitems #logo { margin-right: 6em; white-space: nowrap; font-size: 1.5em; } .logoCenter a { margin: auto auto; white-space: nowrap; color: whitesmoke; } }
+@media screen and (max-width: 2000px) { #hamitems #logo { margin-right: 6em; white-space: nowrap; font-size: 1.5em; } .logoCenter a { margin: auto auto; white-space: nowrap; color: whitesmoke; } }
 
 @use 'base';
 .flex-header { display: flex; background-color: #ffffff; height: 200px; }
