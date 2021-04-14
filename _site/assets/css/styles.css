@@ -41,7 +41,9 @@
 
 .dropdown:hover .dropbtn { background-color: #269d8f; }
 
-@media screen and (max-width: 1060px) { /* Show Hamburger Icon */ #hamnav label { display: inline-block; color: white; font-style: normal; font-size: 1.2em; padding: 10px; } /* Break down menu items into vertical */ #hamitems a { box-sizing: border-box; display: block; width: 100%; color: black; } #hamitems { display: none; } #hamnav input:checked ~ #hamitems { display: block; position: absolute; background-color: white; width: 100vw; height: 100vh; margin-left: 0; margin-top: 40px; } #hamnav input:checked ~ #hamitems #logo { display: none; } #hamnav input:checked ~ #hamitems #searchform { margin-top: 1em; margin-left: 25%; border: 1px solid black; width: 272px; } #hamnav input:checked ~ #hamitems .resizeLoginSignup { flex-direction: column; margin-top: 100px; } #hamnav input:checked ~ #hamitems .searchForm { background-color: white; margin-top: -20px; height: 100px; justify-content: center; } }
+#mobileLogo { display: none; }
+
+@media screen and (max-width: 1060px) { /* Show Hamburger Icon */ #hamnav label { display: inline-block; color: white; font-style: normal; font-size: 1.2em; padding: 10px; } /* Break down menu items into vertical */ #hamitems a { box-sizing: border-box; display: block; width: 100%; color: black; } #hamitems { display: none; } #hamnav input:checked ~ #hamitems { display: block; position: absolute; background-color: white; width: 100vw; height: 100vh; margin-left: 0; margin-top: 40px; } #hamnav input:checked ~ #hamitems #searchform { margin-top: 1em; margin-left: 25%; border: 1px solid black; width: 272px; } #hamnav input:checked ~ #hamitems .resizeLoginSignup { flex-direction: column; margin-top: 100px; } #hamnav input:checked ~ #hamitems .searchForm { background-color: white; margin-top: -20px; height: 100px; justify-content: center; } #mobileLogo { display: flex; justify-content: center; } #mobileLogo img { position: absolute; } }
 
 html, body { padding: 0; margin: 0; font-family: arial, sans-serif; }
 
@@ -116,7 +118,7 @@ body { background-color: whitesmoke; }
 
 .card-flex-bottom { margin-top: -1em; display: flex; justify-content: space-between; margin-left: 1em; margin-right: 15em; }
 
-.card-small-flex { border: 2px solid #242f40; border-radius: 5px; display: flex; width: 30%; margin-top: 1em; height: 250px; color: #242f40; flex-direction: column; }
+.card-small-flex { border: 2px solid #242f40; border-radius: 5px; display: flex; width: 24%; margin-top: 1em; height: 250px; color: #242f40; flex-direction: column; }
 
 .retailerImage { background-color: #d8d8d8; height: 144px; display: flex; justify-content: center; align-items: center; }
 
@@ -127,5 +129,7 @@ body { background-color: whitesmoke; }
 #card-content { padding-left: 11px; padding-right: 11px; margin-top: -10px; }
 
 .dailyDeals { padding-top: 30px; font-size: 24px; color: #242f40; font-family: Roboto; font-size: 24px; font-weight: 500; font-stretch: normal; font-style: normal; line-height: normal; letter-spacing: normal; }
+
+@media screen and (max-width: 1060px) { .card-small-flex { width: 100%; } }
 
 /*# sourceMappingURL=styles.css.map */

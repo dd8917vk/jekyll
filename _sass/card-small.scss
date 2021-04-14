@@ -2,7 +2,7 @@
 	border: 2px solid #242f40;
 	border-radius: 5px;
 	display: flex;
-	width: 30%;
+	width: 24%;
 	margin-top: 1em;
 	height: 250px;
 	color: #242f40;
@@ -55,4 +55,9 @@
 	font-style: normal;
 	line-height: normal;
 	letter-spacing: normal;
+}
+@media screen and (max-width: 1060px) {
+	.card-small-flex {
+		width: 100%;
+	}
 }
