@@ -1,85 +1,32 @@
 @use 'base';
 
 .flex-header {
-    display: flex;
-    background-color: #ffffff;
-    height: 200px;
+	display: flex;
+	background-color: #ffffff;
+	height: 300px;
+	padding-left: 100px;
 }
-
-.flex-chewy {
-    margin-left: 20px;
-    display:flex;
-    width: 20%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.flex-header-info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-
-%heart-shared {
-    display: flex;
-    margin-top:200px;
-    position:absolute;
-    background-color: white;
-    width: 2.5em;
-    height: 2.5em;
-    border-radius: 50%;
-    justify-content: center;
-    box-shadow: 0px 3px 2px 0px #888888;
-    margin-left: 50px;
+.flex-header-logo {
+	background-color: #d8d8d8;
+	width: 215px;
+	height: 215px;
+	display: flex;
+	justify-content: center;
 }
-.heart {
-    @extend %heart-shared;
+.flex-header-logo p {
+	align-self: center;
 }
-.heart:hover {
-    @extend %heart-shared;
-    box-shadow: 0px 3px 2px 1px #888888;
-    cursor: pointer;
+.flex-header-info-details {
+	display: flex;
+	flex-direction: column;
+	padding-left: 10px;
 }
-
-.heart > i {
-    color: #cccccc;
-    margin: auto auto;
-}
-.flex-promo {
-    width: 70%;
-    margin-left: 20px;
-    justify-content: center;
-    margin: auto auto;
-}
-
-.flex-prices {
-    display:flex;
-    margin-top: -20px;
-}
-.constrain_prices {
-    display:flex;
-    width: 60%;
-    justify-content: space-between;
-    font-size: 15px;
-}
-.checked {
-    color: orange;
-}
-
-
-@media screen and (max-width: 900px){
-    .constrain_prices {
-        font-size: 12px;
-    }
-    .flex-stars {
-        
-    }
-
-    .heart {
-        right: 20px;
-        position: absolute;
-        margin-bottom: 200px;
-    }
-//   #hamnav label { 
-//     display: inline-block; 
-//     color: white;
-//     font-style: normal;
-//     font-size: 1.2em;
-//     padding: 10px;
-//   }
+@media screen and (max-width: 1260px) {
+	.constrain_prices {
+	}
 }

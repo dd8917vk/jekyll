@@ -50,25 +50,15 @@ html, body { padding: 0; margin: 0; font-family: arial, sans-serif; }
 @media screen and (max-width: 2000px) { #hamitems #logo { margin-right: 6em; white-space: nowrap; font-size: 1.5em; } .logoCenter a { margin: auto auto; white-space: nowrap; color: whitesmoke; } }
 
 @use 'base';
-.flex-header { display: flex; background-color: #ffffff; height: 200px; }
+.flex-header { display: flex; background-color: #ffffff; height: 300px; padding-left: 100px; }
 
-.flex-chewy { margin-left: 20px; display: flex; width: 20%; justify-content: center; align-items: center; flex-direction: column; }
+.flex-header-info { display: flex; justify-content: center; align-items: center; }
 
-.heart:hover, .heart { display: flex; margin-top: 200px; position: absolute; background-color: white; width: 2.5em; height: 2.5em; border-radius: 50%; justify-content: center; box-shadow: 0px 3px 2px 0px #888888; margin-left: 50px; }
+.flex-header-logo { background-color: #d8d8d8; width: 215px; height: 215px; display: flex; justify-content: center; }
 
-.heart:hover { box-shadow: 0px 3px 2px 1px #888888; cursor: pointer; }
+.flex-header-logo p { align-self: center; }
 
-.heart > i { color: #cccccc; margin: auto auto; }
-
-.flex-promo { width: 70%; margin-left: 20px; justify-content: center; margin: auto auto; }
-
-.flex-prices { display: flex; margin-top: -20px; }
-
-.constrain_prices { display: flex; width: 60%; justify-content: space-between; font-size: 15px; }
-
-.checked { color: orange; }
-
-@media screen and (max-width: 900px) { .constrain_prices { font-size: 12px; } .heart { right: 20px; position: absolute; margin-bottom: 200px; } }
+.flex-header-info-details { display: flex; flex-direction: column; padding-left: 10px; }
 
 body { background-color: whitesmoke; }
 
