@@ -7,7 +7,7 @@
 
 .searchForm { display: flex; }
 
-#searchform { margin-left: -80px; border-radius: 3px; border: 1px solid white; display: flex; flex-direction: row; height: 3em; }
+#searchform { margin-left: -120px; border-radius: 3px; border: 1px solid white; display: flex; flex-direction: row; height: 3em; }
 
 #searchinput { border: 1px solid white; font-size: 18px; color: #636b77; }
 
@@ -41,7 +41,7 @@
 
 .dropdown:hover .dropbtn { background-color: #269d8f; }
 
-@media screen and (max-width: 900px) { /* Show Hamburger Icon */ #hamnav label { display: inline-block; color: white; font-style: normal; font-size: 1.2em; padding: 10px; } /* Break down menu items into vertical */ #hamitems a { box-sizing: border-box; display: block; width: 100%; color: black; } #hamitems { display: none; } #hamnav input:checked ~ #hamitems { display: block; position: absolute; background-color: white; width: 100vw; height: 100vh; margin-left: 0; margin-top: 40px; } #hamnav input:checked ~ #hamitems #logo { display: none; } #hamnav input:checked ~ #hamitems #searchform { margin-top: 1em; margin-left: 25%; border: 1px solid black; width: 272px; } #hamnav input:checked ~ #hamitems .resizeLoginSignup { flex-direction: column; margin-top: 100px; } #hamnav input:checked ~ #hamitems .searchForm { background-color: white; margin-top: -20px; height: 100px; justify-content: center; } }
+@media screen and (max-width: 1060px) { /* Show Hamburger Icon */ #hamnav label { display: inline-block; color: white; font-style: normal; font-size: 1.2em; padding: 10px; } /* Break down menu items into vertical */ #hamitems a { box-sizing: border-box; display: block; width: 100%; color: black; } #hamitems { display: none; } #hamnav input:checked ~ #hamitems { display: block; position: absolute; background-color: white; width: 100vw; height: 100vh; margin-left: 0; margin-top: 40px; } #hamnav input:checked ~ #hamitems #logo { display: none; } #hamnav input:checked ~ #hamitems #searchform { margin-top: 1em; margin-left: 25%; border: 1px solid black; width: 272px; } #hamnav input:checked ~ #hamitems .resizeLoginSignup { flex-direction: column; margin-top: 100px; } #hamnav input:checked ~ #hamitems .searchForm { background-color: white; margin-top: -20px; height: 100px; justify-content: center; } }
 
 html, body { padding: 0; margin: 0; font-family: arial, sans-serif; }
 
@@ -116,4 +116,16 @@ body { background-color: whitesmoke; }
 
 .card-flex-bottom { margin-top: -1em; display: flex; justify-content: space-between; margin-left: 1em; margin-right: 15em; }
 
-.card-small-flex { border: 2px solid #242f40; border-radius: 5px; display: flex; width: 30%; margin-top: 1em; height: 250px; }
+.card-small-flex { border: 2px solid #242f40; border-radius: 5px; display: flex; width: 30%; margin-top: 1em; height: 250px; color: #242f40; flex-direction: column; }
+
+.retailerImage { background-color: #d8d8d8; height: 144px; display: flex; justify-content: center; align-items: center; }
+
+.retailerDetail { height: 105px; background-color: white; width: 100%; display: flex; justify-content: center; flex-direction: column; word-break: break-all; overflow: hidden; padding-bottom: 10px; }
+
+#card-title { padding-top: px; padding-left: 11px; font-size: 24px; font-family: "Roboto"; font-weight: 500; font-stretch: normal; font-style: normal; line-height: normal; letter-spacing: normal; }
+
+#card-content { padding-left: 11px; padding-right: 11px; margin-top: -10px; }
+
+.dailyDeals { padding-top: 30px; font-size: 24px; color: #242f40; font-family: Roboto; font-size: 24px; font-weight: 500; font-stretch: normal; font-style: normal; line-height: normal; letter-spacing: normal; }
+
+/*# sourceMappingURL=styles.css.map */
