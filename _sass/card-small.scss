@@ -24,7 +24,6 @@
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	overflow: hidden;
 }
 #card-title {
 	padding-top: px;
@@ -38,8 +37,10 @@
 }
 #card-content {
 	padding-left: 11px;
-	padding-right: 11px;
 	margin-top: -10px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
 }
 .dailyDeals {
 	padding-top: 30px;
