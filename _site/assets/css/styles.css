@@ -1,7 +1,7 @@
 .current { color: green; }
 
 @use 'base';
-#hamnav { width: 100vw; background-color: #242f40; /* Optional */ position: sticky; top: 0; height: 96px; padding-top: 20px; z-index: 1; font-family: "Roboto"; font-size: 18px; font-weight: normal; font-stretch: normal; font-style: normal; line-height: normal; letter-spacing: normal; }
+#hamnav { width: 100vw; background-color: #242f40; /* Optional */ position: sticky; top: 0; height: 96px; padding-top: 20px; z-index: 1; font-size: 18px; font-weight: normal; font-stretch: normal; font-style: normal; line-height: normal; letter-spacing: normal; }
 
 .resizeLoginSignup { display: flex; }
 
@@ -77,6 +77,16 @@ body { background-color: whitesmoke; }
 
 .card-small-flex-container { display: flex; flex-wrap: wrap; justify-content: space-between; margin-top: 1em; }
 
+#footer { margin-top: 30px; height: 100px; background-color: #242f40; display: flex; width: 100vw; align-items: center; }
+
+.footerLogo { margin-left: 50px; }
+
+.footerLinks { margin-left: 30px; }
+
+.footerLinks a { padding: 10px; color: white; text-decoration: none; font-size: 18px; }
+
+@media screen and (max-width: 1060px) { #footer { display: none; } }
+
 @use 'base';
 .card-flex-background-apply { background-image: linear-gradient(to right, #ff0006, #ff0079, #ff5d1e); border-radius: 15px; padding-left: 8px; width: 100%; padding-top: 20px; padding-bottom: 7px; }
 
@@ -124,12 +134,10 @@ body { background-color: whitesmoke; }
 
 .retailerDetail { height: 105px; background-color: white; width: 100%; display: flex; justify-content: center; flex-direction: column; word-break: break-all; overflow: hidden; padding-bottom: 10px; }
 
-#card-title { padding-top: px; padding-left: 11px; font-size: 24px; font-family: "Roboto"; font-weight: 500; font-stretch: normal; font-style: normal; line-height: normal; letter-spacing: normal; }
+#card-title { padding-top: px; padding-left: 11px; font-size: 24px; font-weight: 500; font-stretch: normal; font-style: normal; line-height: normal; letter-spacing: normal; }
 
 #card-content { padding-left: 11px; padding-right: 11px; margin-top: -10px; }
 
-.dailyDeals { padding-top: 30px; font-size: 24px; color: #242f40; font-family: Roboto; font-size: 24px; font-weight: 500; font-stretch: normal; font-style: normal; line-height: normal; letter-spacing: normal; }
-
-@media screen and (max-width: 1060px) { .card-small-flex { width: 100%; } }
+.dailyDeals { padding-top: 30px; font-size: 24px; color: #242f40; font-size: 24px; font-weight: 500; font-stretch: normal; font-style: normal; line-height: normal; letter-spacing: normal; }
 
 /*# sourceMappingURL=styles.css.map */
