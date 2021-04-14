@@ -1,11 +1,19 @@
 <div class="body-flex">
 	<span class="dailyDeals">Today's Daily Deals</span>
 	<div class="card-small-flex-container">
-		{% include card-small.html %}{% include card-small.html %}{% include
-		card-small.html %}{% include card-small.html %}{% include card-small.html
-		%}{% include card-small.html %}{% include card-small.html %}{% include
-		card-small.html %}{% include card-small.html %}{% include card-small.html
-		%}{% include card-small.html %}{% include card-small.html %}
+		{% for item in site.data._json %}
+		<a href="/merchants/{{item[0]}}.html">
+		<div class="card-small-flex">
+			<div class="retailerImage">
+			<p>Retailer Logo</p>
+		</div>
+		</a>
+		<div class="retailerDetail">
+			<p id="card-title">{{item[0]}}</p>
+			<p id="card-content">{{item[1][1][0]["cLabel"]}}</p>
+		</div>
+	</div>
+		{% endfor %}
 	</div>
 </div>
 <footer id="footer">
@@ -20,7 +28,6 @@
 		<a class="" href="#">Privacy Policy</a>
 		<a class="" href="#">Terms and Conditions</a>
 	</div>
-	<div class="footerCopywright"></div>
 </footer>
 <!-- <div class="right-panel-flex">
 		<div class="info-bar-flex">
