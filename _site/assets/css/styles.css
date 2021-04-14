@@ -88,35 +88,15 @@ body { background-color: whitesmoke; }
 
 .card-flex { border: 2px solid black; display: flex; background-color: #ffffff; color: #242f40; flex-direction: column; width: 99.2%; border-radius: 10px; margin-top: 1em; }
 
-.card-flex-top { display: flex; justify-content: space-between; padding-left: 10px; padding-right: 10px; font-size: 11px; color: #242f40; }
+.card-flex-mid { display: flex; margin-top: -15px; }
 
-.card-flex-mid { display: flex; margin-top: -15px; justify-content: space-between; }
+.card-flex-mid-left { display: flex; margin-left: 20px; padding-bottom: 10px; }
 
-.card-flex-mid-left { display: flex; margin-left: 2em; }
+.card-flex-bottom { margin-top: -1em; display: flex; margin-right: 15em; width: 100%; padding-bottom: 10px; justify-content: center; }
 
-.card-flex-mid-right { display: flex; flex-direction: column; align-items: center; }
+.card-flex-bottom a { display: flex; justify-content: center; }
 
-.coupon-text { margin-left: 1em; margin-top: 1em; }
-
-.coupon-text h2 { color: #242f40; }
-
-.coupon-square { height: 80px; width: 80px; background-image: linear-gradient(to right, #1f5999, #269d8f); border-top-left-radius: 5px; border-top-right-radius: 5px; color: whitesmoke; }
-
-.coupon-square p:nth-child(1) { font-size: 2em; text-align: center; padding-top: 10px; }
-
-.coupon-square p:nth-child(2) { text-align: center; margin-top: -30px; }
-
-.card-flex-mid-right div span { margin-bottom: 10px; font-size: 14px; }
-
-.card-flex-mid-right a { font-size: 10px; color: #4e4e4e; }
-
-.card-flex-mid-button { border-radius: 30px; background-color: #004f61; margin: auto auto; border: 1px solid #3297ad; width: 10em; height: 3em; color: whitesmoke; font-size: 18px; cursor: pointer; }
-
-.card-flex-mid-right { margin-right: 2em; margin-top: 2em; }
-
-#card-flex-bottom-seperator { width: 99.5%; }
-
-.card-flex-bottom { margin-top: -1em; display: flex; justify-content: space-between; margin-left: 1em; margin-right: 15em; }
+.card-flex-bottom a img { height: 70px; width: 90%; }
 
 .card-small-flex { border: 2px solid #242f40; border-radius: 5px; display: flex; width: 24%; margin-top: 1em; height: 250px; color: #242f40; flex-direction: column; }
 
