@@ -22,6 +22,8 @@
 	display: flex;
 	width: 100vw;
 	align-items: center;
+	bottom: 0;
+	position: fixed;
 }
 .footerLogo {
 	margin-left: 50px;
@@ -42,89 +44,3 @@
 		display: none;
 	}
 }
-// .bottom-panel-links-container {
-// 	background-color: $bgColor2;
-// 	display: flex;
-// 	justify-content: center;
-// 	height: 18em;
-// 	padding-bottom: 3em;
-// }
-// .bottom-panel-links {
-// 	padding-top: 4em;
-// 	display: flex;
-// 	justify-content: space-between;
-// 	width: 65%;
-// }
-// .bottom-panel-links div {
-// 	display: flex;
-// 	flex-direction: column;
-// 	font-size: 17px;
-// }
-// .bottom-panel-links-sep {
-// 	display: flex;
-// 	justify-content: space-between;
-// }
-// .bottom-panel-links div a {
-// 	color: #266f95;
-// }
-// .twitter-bar-bg {
-// 	background-color: $bgColor;
-// 	display: flex;
-// 	justify-content: center;
-// 	padding-top: 2em;
-// 	padding-bottom: 2em;
-// }
-// .twitter-bar {
-// 	display: flex;
-// 	width: 15%;
-// 	justify-content: space-between;
-// }
-// .twitter-bar p > i {
-// 	color: #666666;
-// }
-
-// .bottom-footer {
-// 	padding-top: 4em;
-// 	display: flex;
-// 	flex-direction: column;
-// 	background-color: $bgColor3;
-// 	font-size: 1.6em;
-// 	padding-bottom: 4em;
-// 	align-items: center;
-// 	justify-content: center;
-// }
-// .bottom-footer a {
-// 	color: whitesmoke;
-// }
-// .bottom-footer p {
-// 	font-size: 0.5em;
-// 	color: whitesmoke;
-// }
-
-// .scroll-button {
-// 	width: 5em;
-// 	height: 5em;
-// 	border-radius: 50%;
-// 	border: 1px solid lightgray;
-// 	z-index: 99;
-// 	right: 20px;
-// 	bottom: 20px;
-// 	cursor: pointer;
-// 	position: fixed;
-// 	background-color: lightgray;
-// 	display: none;
-// }
-// .fas.fa-arrow-up.fa-3x {
-// 	color: whitesmoke;
-// }
-// //Media queries 800px or less
-// @media screen and (max-width: 900px) {
-// 	//Hide left panel
-// 	.left-panel-flex {
-// 		display: none;
-// 	}
-// 	//Make right panel and info bar width 100% now
-// 	.right-panel-flex {
-// 		width: 100%;
-// 	}
-// }

@@ -1,63 +1,48 @@
-{% for item in site.data._json %}
-{% if page.title == item[0] %}
-{% for content in item[1][1] %}
-<div class="card-flex-background">
-    <div class="card-flex-background-p">
-        <p>Today's best offer</p>
-        <!-- <p>{{item[1][1][1]["cMerchant"]}}</p>
-        <p>{{item[1][1][1]["cLastUpdated"]}}</p> -->
-        <p>{{ content["cLabel"] }}</p>
-        <p>{{ content["cStatus"] }}</p>
-    </div>
-    <div class="card-flex">
-        <div class="card-flex-top">
-            <p>{{ content["cMerchant"] }}</p>
-        </div>
-        <div class="card-flex-mid">
-            <div class="card-flex-mid-left">
-                <div class="coupon-label">
-                    <div class="coupon-square">
-                        <p>{{ content["nPercent"]}}% OFF</p>
-                    </div>
-                    <div class="coupon-triangle">
-                    </div>
-                </div>
-                <div class="coupon-text">
-                    <h2>{{ content["nPercent"] }}% off</h2>
-                    <p>{{ content["cLabel"] }}</p>
-                </div>
-            </div>
-            <div class="card-flex-mid-right">
-                <div>
-                    <span class="fa fa-star checked"></span>
-                    <span>TOP OFFER</span>
-                </div>
-                <a rel="noopener" href={{ content["cDirectURL"] }} target="_blank"><button class="card-flex-mid-button">Get Coupon</button></a>
-                <a href="#">This coupon works heres the proof</a>
-            </div>
-        </div>
-        <hr id="card-flex-bottom-seperator">
-        <div class="card-flex-bottom">
-            <p>SAVE AND USE TODAY!</p>
-            <p>Updated {{ content["cLastUpdated"] }}</p>
-        </div>
-    </div>
+{% for item in site.data._json %} {% if page.title == item[0] %} {% for content
+in item[1][1] %}
+<div class="card-flex-background-container">
+	<div class="card-flex-background">
+		<div class="card-flex-background-p">
+			<p>SAVRtopdeal</p>
+		</div>
+		<div class="card-flex">
+			<div class="card-flex-mid">
+				<div class="card-flex-mid-left">
+					<div class="coupon-label"></div>
+					<div class="coupon-text">
+						<h2>{{ content["nPercent"] }}% off</h2>
+						<p>{{ content["cLabel"] }}</p>
+					</div>
+				</div>
+			</div>
+			<div class="card-flex-bottom">
+				<p>SAVE AND USE TODAY!</p>
+				<p>Updated {{ content["cLastUpdated"] }}</p>
+			</div>
+		</div>
+	</div>
 </div>
-{% endfor %}
-{% endif %}
-{% endfor %}
+{% endfor %} {% endif %} {% endfor %}
 <script>
-    window.onload = () => {
-        setTopCard();
-    }
-    const setTopCard = () => {
-        let cardCollection = document.getElementsByClassName("card-flex-background");
-        if (cardCollection.length > 0) {
-            cardCollection[0].className = "card-flex-background-apply";
-            let cardBoxShadow = document.getElementsByClassName("card-flex");
-            cardBoxShadow[0].style.boxShadow = "none";
-        }
-    }
-// {% for item in site.data.navigation.coupon %}
-// {% endfor %}
+	window.onload = () => {
+		setTopCard();
+	};
+	const setTopCard = () => {
+		let cardCollection = document.getElementsByClassName(
+			"card-flex-background"
+		);
+		if (cardCollection.length > 0) {
+			cardCollection[0].className = "card-flex-background-apply";
+			let cardBoxShadow = document.getElementsByClassName("card-flex");
+			let cardTitle = document.getElementsByClassName("card-flex-background-p");
+			let otherCards = Array.from(cardTitle);
+			let rest = otherCards.slice(1, otherCards.length);
+			cardBoxShadow[0].style.boxShadow = "none";
+			rest.forEach((element) => {
+				element.style.display = "none";
+			});
+		}
+	};
+	// {% for item in site.data.navigation.coupon %}
+	// {% endfor %}
 </script>
