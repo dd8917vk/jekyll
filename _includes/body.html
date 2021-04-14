@@ -1,4 +1,5 @@
 <div class="body-flex">
+	{% if page.url == "/" %}
 	<span class="dailyDeals">Today's Daily Deals</span>
 	<div class="card-small-flex-container">
 		{% for item in site.data._json %}
@@ -16,19 +17,8 @@
 		{% endfor %}
 	</div>
 </div>
-<footer id="footer">
-	<div class="footerLogo"><img src="/assets/images/logo.png"></img></div>
-	<div class="footerLinks">
-		<a href="#">Promo Codes</a>
-		<a class="" href="#">Cash Back</a>
-		<a class="" href="#">Gift Cards</a>
-		<a class="" href="#">Coupons</a>
-	</div>
-	<div class="footerLegal footerLinks">
-		<a class="" href="#">Privacy Policy</a>
-		<a class="" href="#">Terms and Conditions</a>
-	</div>
-</footer>
+{% endif %}
+
 <!-- <div class="right-panel-flex">
 		<div class="info-bar-flex">
 			<div class="info-bar-flex-sub1">

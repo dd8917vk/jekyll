@@ -24,9 +24,7 @@
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	word-break: break-all;
 	overflow: hidden;
-	padding-bottom: 10px;
 }
 #card-title {
 	padding-top: px;
@@ -56,5 +54,6 @@
 }
 @media screen and (max-width: 1060px) {
 	.card-small-flex {
+		width: 100%;
 	}
 }

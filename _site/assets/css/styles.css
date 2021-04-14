@@ -132,12 +132,14 @@ body { background-color: whitesmoke; }
 
 .retailerImage { background-color: #d8d8d8; height: 144px; display: flex; justify-content: center; align-items: center; }
 
-.retailerDetail { height: 105px; background-color: white; width: 100%; display: flex; justify-content: center; flex-direction: column; word-break: break-all; overflow: hidden; padding-bottom: 10px; }
+.retailerDetail { height: 105px; background-color: white; width: 100%; display: flex; justify-content: center; flex-direction: column; overflow: hidden; }
 
 #card-title { padding-top: px; padding-left: 11px; font-size: 24px; font-weight: 500; font-stretch: normal; font-style: normal; line-height: normal; letter-spacing: normal; }
 
 #card-content { padding-left: 11px; padding-right: 11px; margin-top: -10px; }
 
 .dailyDeals { padding-top: 30px; font-size: 24px; color: #242f40; font-size: 24px; font-weight: 500; font-stretch: normal; font-style: normal; line-height: normal; letter-spacing: normal; }
+
+@media screen and (max-width: 1060px) { .card-small-flex { width: 100%; } }
 
 /*# sourceMappingURL=styles.css.map */
