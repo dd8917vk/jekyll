@@ -179,8 +179,9 @@
 		display: flex;
 		justify-content: center;
 	}
-	#mobileLogo img {
+	#mobileLogo a img {
 		position: absolute;
+		margin-left: -100px;
 	}
 }
 html,
