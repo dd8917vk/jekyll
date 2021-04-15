@@ -1,7 +1,7 @@
 .current { color: green; }
 
 @use 'base';
-#hamnav { width: 100vw; background-color: #242f40; /* Optional */ position: sticky; top: 0; height: 96px; padding-top: 20px; z-index: 1; font-size: 18px; font-weight: normal; font-stretch: normal; font-style: normal; line-height: normal; letter-spacing: normal; }
+#hamnav { width: 100vw; background-color: #242f40; /* Optional */ position: sticky; top: 0; height: 96px; padding-top: 20px; z-index: 1; font-family: "Roboto Condensed"; font-size: 18px; font-weight: normal; font-stretch: normal; font-style: normal; line-height: normal; letter-spacing: normal; }
 
 .resizeLoginSignup { display: flex; }
 
@@ -67,7 +67,7 @@ body { background-color: whitesmoke; }
 
 .card-small-flex-container { display: flex; flex-wrap: wrap; justify-content: space-between; margin-top: 1em; }
 
-#footer { margin-top: 30px; height: 100px; background-color: #242f40; display: flex; width: 100vw; align-items: center; bottom: 0; position: fixed; }
+#footer { margin-top: 30px; height: 100px; background-color: #242f40; display: flex; width: 100vw; align-items: center; bottom: 0; position: fixed; font-family: "Roboto Condensed"; }
 
 .footerLogo { margin-left: 50px; }
 
@@ -94,11 +94,13 @@ body { background-color: whitesmoke; }
 
 .card-flex-bottom { margin-top: -1em; display: flex; margin-right: 15em; width: 100%; padding-bottom: 10px; justify-content: center; }
 
-.card-flex-bottom a { display: flex; justify-content: center; }
+.card-flex-bottom a { display: flex; justify-content: center; width: 100%; height: 50px; text-decoration: none; }
 
 .card-flex-bottom a img { height: 70px; width: 90%; }
 
-.card-small-flex { border: 2px solid #242f40; border-radius: 5px; display: flex; width: 24%; margin-top: 1em; height: 250px; color: #242f40; flex-direction: column; }
+.card-flex-bottom a button { background-color: #218380; border: 1px solid #218380; font-family: "Roboto Condensed"; color: white; font-weight: bold; font-stretch: normal; font-style: normal; line-height: normal; border-radius: 5px; width: 95%; cursor: pointer; font-size: 24px; }
+
+.card-small-flex { border: 2px solid #242f40; border-radius: 5px; display: flex; width: 24%; margin-top: 1em; height: 250px; color: #242f40; flex-direction: column; font-family: "Roboto Condensed"; }
 
 .retailerImage { background-color: #d8d8d8; height: 144px; display: flex; justify-content: center; align-items: center; }
 
