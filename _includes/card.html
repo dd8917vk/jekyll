@@ -1,16 +1,29 @@
+<div class="card-flex-background-container">
 {% for item in site.data._json %} {% if page.title == item[0] %} {% for content
 in item[1][1] %}
-<div class="card-flex-background-container">
 	<div class="card-flex-background">
 		<div class="card-flex-background-p">
-			<p>SAVRtopdeal</p>
+			<p id="savr-top-deal">
+				<img src="/assets/images/savr-logo-horizontal-white.svg"></img>
+				<img src="/assets/images/top-deal.png"></img>
+				<!-- <img src="/assets/images/savr-logo-horizontal-white.svg"
+     class="SAVRLogoHorizontalWhite">
+				<img src="/assets/images/top-deal.svg" class="Top-Deal"> -->
+			</p>
 		</div>
 		<div class="card-flex">
 			<div class="card-flex-mid">
 				<div class="card-flex-mid-left">
 					<div class="coupon-label"></div>
 					<div class="coupon-text">
+						{% if content["nPercent"] > "0" %}
+						<h2>{{ content["cMerchant"] }}</h2>
 						<h2>{{ content["nPercent"] }}% off</h2>
+						{% endif %}
+						{% if content["nPercent"] == "0" %}
+						<h2>{{ content["cMerchant"] }}</h2>
+						{% endif %}
+						
 						<p>{{ content["cLabel"] }}</p>
 					</div>
 				</div>
@@ -21,8 +34,8 @@ in item[1][1] %}
 			</div>
 		</div>
 	</div>
-</div>
 {% endfor %} {% endif %} {% endfor %}
+</div>
 <script>
 	window.onload = () => {
 		setTopCard();

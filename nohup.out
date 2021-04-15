@@ -9,3 +9,4 @@ bash: no job control in this shell
 [90m[main 2021-04-15T13:04:06.620Z][0m update#setState checking for updates
 [90m[main 2021-04-15T13:04:06.689Z][0m update#setState available for download
 [5319:0415/081851.286553:ERROR:gl_utils.cc(314)] [.RendererMainThread-0x27f1c6e42a00] GL_INVALID_FRAMEBUFFER_OPERATION: Draw framebuffer is incomplete
+(node:5286) electron: The default of contextIsolation is deprecated and will be changing from false to true in a future release of Electron.  See https://github.com/electron/electron/issues/23506 for more information

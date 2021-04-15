@@ -67,7 +67,7 @@ body { background-color: whitesmoke; }
 
 .card-small-flex-container { display: flex; flex-wrap: wrap; justify-content: space-between; margin-top: 1em; }
 
-#footer { margin-top: 30px; height: 100px; background-color: #242f40; display: flex; width: 100vw; align-items: center; bottom: 0; position: fixed; font-family: "Roboto Condensed"; }
+#footer { height: 100px; background-color: #242f40; display: flex; width: 100vw; align-items: center; bottom: 0; position: fixed; font-family: "Roboto Condensed"; }
 
 .footerLogo { margin-left: 50px; }
 
@@ -78,15 +78,17 @@ body { background-color: whitesmoke; }
 @media screen and (max-width: 1060px) { #footer { display: none; } }
 
 @use 'base';
-.card-flex-background-container { margin-left: 100px; margin-right: 100px; margin-top: 30px; }
+.card-flex-background-container { margin-left: 100px; margin-right: 100px; margin-top: 30px; margin-bottom: 150px; }
 
 .card-flex-background-apply { background-color: #36aa00; border-radius: 15px; padding-left: 8px; width: 100%; padding-top: 20px; padding-bottom: 7px; padding-right: 5px; margin-left: -5px; }
 
-.card-flex-background-p { display: flex; justify-content: space-between; margin-bottom: -1.1em; margin-top: -1.1em; color: whitesmoke; font-weight: bold; }
+.card-flex-background-p { display: flex; justify-content: flex-start; margin-bottom: -1.1em; margin-top: -1.1em; color: whitesmoke; font-weight: bold; }
+
+#savr-top-deal { padding-left: 20px; }
 
 .card-flex-background-p p:nth-child(2) { padding-right: 15px; }
 
-.card-flex { border: 2px solid black; display: flex; background-color: #ffffff; color: #242f40; flex-direction: column; width: 99.2%; border-radius: 10px; margin-top: 1em; }
+.card-flex { border: 2px solid black; display: flex; background-color: #ffffff; color: #242f40; flex-direction: column; width: 99%; border-radius: 10px; margin-top: 1em; }
 
 .card-flex-mid { display: flex; margin-top: -15px; }
 
